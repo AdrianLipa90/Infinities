@@ -2,3 +2,4 @@
 
 from .core import *
 from .bmf import *
+from .bmcf import *
