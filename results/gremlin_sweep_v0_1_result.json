@@ -1,0 +1,103 @@
+{
+  "baseline_all": {
+    "coverage": 0.84375,
+    "covered": 27,
+    "missing_operator_counts": {
+      "AVERAGE": 1,
+      "POWERSET": 1,
+      "STOCHASTIC": 1,
+      "TRANSFORM": 2
+    },
+    "total": 32,
+    "uncovered": [
+      "H04",
+      "H05",
+      "H06",
+      "H07",
+      "H13"
+    ]
+  },
+  "baseline_holdout": {
+    "coverage": 0.6153846153846154,
+    "covered": 8,
+    "total": 13,
+    "uncovered": [
+      "H04",
+      "H05",
+      "H06",
+      "H07",
+      "H13"
+    ]
+  },
+  "baseline_training": {
+    "coverage": 1.0,
+    "covered": 19,
+    "total": 19,
+    "uncovered": []
+  },
+  "baseline_vocabulary": [
+    "SHIFT",
+    "SCALE",
+    "BRANCH",
+    "FACTOR",
+    "INVERT"
+  ],
+  "catalog_size": 32,
+  "claims": {
+    "baseline_fits_training_catalog": "PASS",
+    "baseline_generalizes_to_all_holdouts": "FAIL",
+    "collatz_proof": "NO",
+    "finite_catalog_extended_grammar": "PASS",
+    "minimality_is_mathematical_theorem": "NO",
+    "rh_proof": "NO",
+    "universal_half_seam": "FAIL"
+  },
+  "counterexample_values": {
+    "H08": "sqrt(2)",
+    "H09": "phi",
+    "I09": "epsilon_0",
+    "I14": "sqrt(2)",
+    "I18": "-1 in Q_2"
+  },
+  "extension_candidates": [
+    "AVERAGE",
+    "TRANSFORM",
+    "POWERSET",
+    "STOCHASTIC"
+  ],
+  "half_seam_test": {
+    "confirmed_case_ids": [
+      "I10",
+      "I15",
+      "I17",
+      "H04"
+    ],
+    "counterexample_case_ids": [
+      "I09",
+      "I14",
+      "I18",
+      "H08",
+      "H09"
+    ],
+    "scope_note": "This tests the catalogued natural fixed points/seams only; it is not a theorem about all possible representations.",
+    "universal_half_hypothesis": "FAIL"
+  },
+  "holdout_size": 13,
+  "minimal_vocabularies_under_catalog_schema": [
+    [
+      "SHIFT",
+      "SCALE",
+      "BRANCH",
+      "FACTOR",
+      "INVERT",
+      "AVERAGE",
+      "TRANSFORM",
+      "POWERSET",
+      "STOCHASTIC"
+    ]
+  ],
+  "minimal_vocabulary_size_under_catalog_schema": 9,
+  "result_sha256_without_self_hash": "59fd28cb688d382b17be8b59d00c4c132d0627eeff3621de556df771909908ea",
+  "schema": "GREMLIN_INFINITIES_SWEEP_RESULT_V0_1",
+  "training_size": 19
+}
