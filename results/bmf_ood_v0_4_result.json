@@ -1,0 +1,64 @@
+{
+  "claims": {
+    "all_infinity_mathematics_is_bmf": "NOT_CLAIMED",
+    "canonical_bmf_is_universally_complete": "NOT_CLAIMED",
+    "choice_like_witness_selection_is_reducible_to_bmf_without_extra_structure": "NOT_CLAIMED",
+    "collatz_proof": "NO",
+    "finite_kernel_operators_factor_through_bmf_by_construction": "EXACT",
+    "rh_proof": "NO"
+  },
+  "infinite_scope_note": "All executable checks are finite witnesses. Infinite folds additionally require explicit topology/completion/convergence assumptions.",
+  "kernel_factorization": "T_K = F_add o M_K o B",
+  "overall_status": "PASS",
+  "result_sha256_without_self_hash": "351be28233b58977e8bfbe8740395da7e5f93ac137c39fb4ebf5cae226309822",
+  "schema": "INFINITIES_BMF_OOD_RESULT_V0_4",
+  "seed": 20260915,
+  "tests": {
+    "boolean_adjacency": {
+      "status": "PASS"
+    },
+    "dft": {
+      "max_abs_error_by_n": {
+        "2": 0.0,
+        "3": 0.0,
+        "5": 0.0,
+        "8": 0.0
+      },
+      "status": "PASS"
+    },
+    "dirichlet_convolution": {
+      "status": "PASS"
+    },
+    "divisibility_zeta": {
+      "status": "PASS"
+    },
+    "markov": {
+      "max_abs_error": 0.0,
+      "status": "PASS"
+    },
+    "selector_symmetry_obstruction": {
+      "claim_scope": "FINITE_BARE_SET_FULL_PERMUTATION_EQUIVARIANCE_ONLY",
+      "equivariant_selector_exists": {
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0
+      },
+      "sizes": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "status": "PASS"
+    },
+    "tensor_contraction": {
+      "max_abs_error": 8.881784197001252e-16,
+      "status": "PASS"
+    },
+    "walsh_hadamard": {
+      "max_abs_error": 0.0,
+      "status": "PASS"
+    }
+  }
+}
