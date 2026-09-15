@@ -24,6 +24,8 @@ jobs:
         run: python validation/validate_fourth_operator_v0_6.py
       - name: Run BMCF v0.7 polynomial/multilinear controls
         run: python validation/validate_bmcf_v0_7.py
+      - name: Run BMCF v0.8 conditional COUPLE obstruction controls
+        run: python validation/validate_bmcf_obstruction_v0_8.py
       - name: Produce computation snapshot
         run: python computations/run_v0_1.py > computation_snapshot.json
       - name: Produce BMF OOD snapshot
@@ -34,3 +36,5 @@ jobs:
         run: python computations/fourth_operator_search_v0_6.py > /tmp/fourth_operator_search_v0_6.stdout.json
       - name: Produce BMCF v0.7 polynomial snapshot
         run: python computations/bmcf_polynomial_v0_7.py > /tmp/bmcf_polynomial_v0_7.stdout.json
+      - name: Produce BMCF v0.8 obstruction snapshot
+        run: python computations/bmcf_obstruction_v0_8.py > /tmp/bmcf_obstruction_v0_8.stdout.json
