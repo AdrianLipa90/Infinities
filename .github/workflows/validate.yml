@@ -22,6 +22,8 @@ jobs:
         run: python validation/validate_bmf_boundary_v0_5.py
       - name: Run v0.6 conditional fourth-operator search controls
         run: python validation/validate_fourth_operator_v0_6.py
+      - name: Run BMCF v0.7 polynomial/multilinear controls
+        run: python validation/validate_bmcf_v0_7.py
       - name: Produce computation snapshot
         run: python computations/run_v0_1.py > computation_snapshot.json
       - name: Produce BMF OOD snapshot
@@ -30,3 +32,5 @@ jobs:
         run: python computations/bmf_boundary_v0_5.py > /tmp/bmf_boundary_v0_5.stdout.json
       - name: Produce v0.6 fourth-operator search snapshot
         run: python computations/fourth_operator_search_v0_6.py > /tmp/fourth_operator_search_v0_6.stdout.json
+      - name: Produce BMCF v0.7 polynomial snapshot
+        run: python computations/bmcf_polynomial_v0_7.py > /tmp/bmcf_polynomial_v0_7.stdout.json
