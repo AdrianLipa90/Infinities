@@ -1,0 +1,65 @@
+{
+  "conclusion": {
+    "best_supported_data_plane_candidate": "COUPLE",
+    "conditional_fourth_slot_is_mathematical_singleton": "NOT_ESTABLISHED",
+    "single_universal_fourth_operator_found": "NO",
+    "typed_aux_sum_is_allowed_as_software_architecture": "YES_NOT_A_UNIVERSALITY_THEOREM"
+  },
+  "firewall": {
+    "collatz_proof": "NO",
+    "couple_is_unique_minimal_fourth": "NOT_CLAIMED",
+    "fixpoint_and_quotient_are_reducible_to_couple": "NOT_CLAIMED",
+    "ite_is_universal_over_all_domains": "NOT_CLAIMED",
+    "rh_proof": "NO",
+    "typed_aux_dispatcher_is_one_mathematical_primitive": "NO"
+  },
+  "overall_status": "PASS",
+  "schema": "INFINITIES_FOURTH_OPERATOR_SEARCH_RESULT_V0_6",
+  "tests": {
+    "couple_monotone_extension": {
+      "representable_count": 6,
+      "status": "PASS",
+      "total_boolean_functions": 16
+    },
+    "couple_plus_fixed_unary_library_dnf": {
+      "distinct_conjunctive_terms": 10,
+      "max_terms_needed_for_two_variable_tables": 2,
+      "representable_count": 16,
+      "status": "PASS",
+      "total_boolean_functions": 16
+    },
+    "couple_real_square": {
+      "sample_values": {
+        "-1": 1,
+        "-3": 9,
+        "0": 0,
+        "2": 4,
+        "5": 25
+      },
+      "status": "PASS"
+    },
+    "fixpoint_reachability": {
+      "fixed_point": [1, 1, 1],
+      "states": [[1, 0, 0], [1, 1, 0], [1, 1, 1], [1, 1, 1]],
+      "status": "PASS"
+    },
+    "gate_ite_shannon_two_variable": {
+      "representable_count": 16,
+      "status": "PASS",
+      "total_boolean_functions": 16
+    },
+    "quotient_carrier_boundary_recheck": {
+      "coequalizer_profiles_A2_to_B3": {
+        "1+1+1": 9,
+        "2+1": 48,
+        "3": 24
+      },
+      "status": "PASS"
+    },
+    "strict_boolean_bmf_baseline": {
+      "representable_count": 4,
+      "status": "PASS",
+      "total_boolean_functions": 16
+    }
+  }
+}

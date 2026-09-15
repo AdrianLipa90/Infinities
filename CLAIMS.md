@@ -1,4 +1,4 @@
-# Claim ledger v0.5
+# Claim ledger v0.6
 
 | ID | Claim | Status | Computational test |
 |---|---|---|---|
@@ -18,7 +18,7 @@
 | INF-014 | Every finite kernel operator `(T_K f)(y)=⊕_x K(y,x)⊗f(x)` factors exactly as `F ∘ M_K ∘ B` | EXACT (DEFINED CLASS) | `validate_bmf_v0_4.py` |
 | INF-015 | DFT, finite Markov transition, Boolean adjacency, divisibility-zeta, Walsh-Hadamard, Dirichlet convolution and finite tensor contraction admit the implemented BMF factorization | NUMERICAL/FINITE WITNESS | `bmf_ood_v0_4.py` |
 | INF-016 | A bare finite set of size `2..5` has no distinguished element equivariant under its full permutation group | FINITE OBSTRUCTION / EXACT ENUMERATION | `validate_bmf_v0_4.py` |
-| INF-017 | `MAP-BRANCH-FOLD` is a universal minimal grammar for all mathematics of infinity | OPEN / NOT CLAIMED | v0.5 provides counterpressure outside the strict finite-kernel class |
+| INF-017 | `MAP-BRANCH-FOLD` is a universal minimal grammar for all mathematics of infinity | OPEN / NOT CLAIMED | v0.5-v0.6 provide counterpressure outside the strict finite-kernel class |
 | INF-018 | Choice-like witness selection always requires a fourth primitive `SELECT` | OPEN / NOT CLAIMED | current result only isolates a symmetry obstruction without extra structure |
 | INF-019 | The two-input/one-output Boolean-semiring kernel-BMF class contains exactly four of the sixteen Boolean functions | EXACT FINITE CLASSIFICATION | `validate_bmf_boundary_v0_5.py` |
 | INF-020 | Stacking finite Boolean-semiring kernel-BMF layers does not escape semimodule linearity or yield functional completeness | EXACT ALGEBRAIC CLOSURE; FINITE ENUMERATION WITNESS | `bmf_boundary_v0_5.py` |
@@ -26,7 +26,13 @@
 | INF-022 | One Boolean adjacency/reachability BMF pass is not in general identical to transitive closure or fixed-point iteration | EXACT COUNTEREXAMPLE | `bmf_boundary_v0_5.py` |
 | INF-023 | Finite quotient/coequalizer carrier formation is not literally the same typed operation as evaluating a kernel on a pre-supplied fixed output carrier | TYPE BOUNDARY / FINITE EXHAUSTIVE WITNESS; INDEPENDENT PRIMITIVE NOT PROVED | `bmf_boundary_v0_5.py` |
 | INF-024 | If an unrestricted FOLD may encode the target function itself, apparent BMF universality becomes tautological | EXACT MODELING WARNING | `bmf_boundary_v0_5.py` |
+| INF-025 | A fixed dynamic-dynamic multiplication operator `COUPLE` strictly extends the strict real kernel-BMF class: branching `x` twice and coupling gives `x^2` | EXACT CONSTRUCTION | `fourth_operator_search_v0_6.py` |
+| INF-026 | Over Boolean variables/constants, closure under fixed OR and dynamic AND contains exactly the six two-variable monotone Boolean functions | EXACT FINITE CLASSIFICATION | `validate_fourth_operator_v0_6.py` |
+| INF-027 | With the separately fixed local unary library `{ZERO, ONE, ID, NOT}`, dynamic AND plus OR-fold realizes all 16 two-variable Boolean functions; general finite Boolean representation follows by DNF | EXACT FINITE ENUMERATION + STANDARD DNF CONSTRUCTION | `fourth_operator_search_v0_6.py` |
+| INF-028 | Fixed `ITE` with constants/variables is Boolean-functionally complete by Shannon expansion | STANDARD BOOLEAN CONSTRUCTION / FINITE ENUMERATION WITNESS | `fourth_operator_search_v0_6.py` |
+| INF-029 | `COUPLE` is the unique or universally minimal fourth primitive | OPEN / NOT CLAIMED | v0.6 only proves strict extension of the data plane |
+| INF-030 | One optional software `AUX` slot with typed variants is one mathematical fourth operator | FALSE AS STATED / TYPE DISTINCTION PRESERVED | `FOURTH_OPERATOR_SEARCH_V0_6.md` |
 
-## v0.5 firewall
+## v0.6 firewall
 
-The exact statement in INF-014 remains scoped to the explicitly defined finite kernel class. Infinite folds require an explicit topology, valuation, measure, completion, or convergence rule. v0.5 additionally forbids promoting finite-kernel exactness to universal computation, the quotient type boundary to proof of an independent fourth primitive, or unrestricted MAP/FOLD encodings to non-tautological universality. No result here proves the Riemann Hypothesis, the Collatz conjecture, or universal minimality of BMF.
+The exact finite-kernel theorem remains scoped to the defined class. `COUPLE` is currently the strongest constrained data-plane extension found for cross-channel interaction, but uniqueness and universal minimality are not established. `GATE/ITE`, `FIXPOINT`, `QUOTIENT`, and symmetry-breaking `SELECT` remain type-distinct candidates/boundaries. A software dispatcher over these variants is not itself evidence for one mathematical primitive. Infinite folds still require explicit topology, valuation, measure, completion, or convergence structure. No result here proves the Riemann Hypothesis, the Collatz conjecture, or universal completeness of the grammar.

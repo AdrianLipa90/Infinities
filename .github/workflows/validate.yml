@@ -20,9 +20,13 @@ jobs:
         run: python validation/validate_bmf_v0_4.py
       - name: Run BMF v0.5 adversarial boundary controls
         run: python validation/validate_bmf_boundary_v0_5.py
+      - name: Run v0.6 conditional fourth-operator search controls
+        run: python validation/validate_fourth_operator_v0_6.py
       - name: Produce computation snapshot
         run: python computations/run_v0_1.py > computation_snapshot.json
       - name: Produce BMF OOD snapshot
         run: python computations/bmf_ood_v0_4.py > /tmp/bmf_ood_v0_4.stdout.json
       - name: Produce BMF boundary snapshot
         run: python computations/bmf_boundary_v0_5.py > /tmp/bmf_boundary_v0_5.stdout.json
+      - name: Produce v0.6 fourth-operator search snapshot
+        run: python computations/fourth_operator_search_v0_6.py > /tmp/fourth_operator_search_v0_6.stdout.json
