@@ -1,0 +1,37 @@
+{
+  "claims": {
+    "bmcf_universal_computation_model": "NOT_CLAIMED",
+    "collatz_proof": "NO",
+    "couple_required_for_degree_gt_one": "EXACT_THEOREM_DEFINED_CLASS",
+    "couple_unique_nonlinear_primitive": "NOT_CLAIMED",
+    "minimal_binary_couple_depth_for_degree_d": "CEIL_LOG2_D_EXACT_DEFINED_CLASS",
+    "novelty_relative_to_arithmetic_circuit_depth_results": "NOT_ESTABLISHED",
+    "rh_proof": "NO",
+    "strict_bmf_degree_le_one_in_polynomial_grammar": "EXACT_THEOREM"
+  },
+  "overall_status": "PASS",
+  "schema": "INFINITIES_BMCF_COUPLE_OBSTRUCTION_RESULT_V0_8",
+  "tests": {
+    "balanced_monomial_construction_0_64": {
+      "depths": {
+        "0": 0, "1": 0, "2": 1, "3": 2, "4": 2, "5": 3, "6": 3, "7": 3, "8": 3,
+        "9": 4, "10": 4, "11": 4, "12": 4, "13": 4, "14": 4, "15": 4, "16": 4,
+        "17": 5, "18": 5, "19": 5, "20": 5, "21": 5, "22": 5, "23": 5, "24": 5,
+        "25": 5, "26": 5, "27": 5, "28": 5, "29": 5, "30": 5, "31": 5, "32": 5,
+        "33": 6, "34": 6, "35": 6, "36": 6, "37": 6, "38": 6, "39": 6, "40": 6,
+        "41": 6, "42": 6, "43": 6, "44": 6, "45": 6, "46": 6, "47": 6, "48": 6,
+        "49": 6, "50": 6, "51": 6, "52": 6, "53": 6, "54": 6, "55": 6, "56": 6,
+        "57": 6, "58": 6, "59": 6, "60": 6, "61": 6, "62": 6, "63": 6, "64": 6
+      },
+      "status": "PASS"
+    },
+    "conditional_activation_by_degree": {
+      "status": "PASS",
+      "values": {"-1": false, "0": false, "1": false, "2": true, "3": true, "4": true, "5": true, "6": true, "7": true, "8": true}
+    },
+    "degree_upper_bound_2_pow_depth": {"checked_depths": 9, "status": "PASS"},
+    "minimal_depth_formula_vs_independent_dp_0_128": {"checked_degrees": 129, "status": "PASS"},
+    "noncommutative_order_preserved_under_balancing": {"depth": 3, "status": "PASS", "word_length": 5},
+    "random_degree_obstruction_trials": {"status": "PASS", "trials": 200}
+  }
+}
