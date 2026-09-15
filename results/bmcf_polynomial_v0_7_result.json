@@ -1,0 +1,80 @@
+{
+  "claims": {
+    "bmcf_strictly_extends_fixed_kernel_bmf_on_free_polynomial_witness": "YES",
+    "bmcf_universal_computation_model": "NOT_CLAIMED",
+    "collatz_proof": "NO",
+    "commutative_finite_polynomial_factorization": "EXACT_DEFINED_CLASS",
+    "couple_unique_minimal_fourth_operator": "NOT_CLAIMED",
+    "finite_multilinear_kernel_factorization": "EXACT_DEFINED_CLASS",
+    "finite_word_polynomial_bmcf_factorization": "EXACT_DEFINED_CLASS",
+    "fixpoint_reduced_to_couple": "NOT_CLAIMED",
+    "novelty_relative_to_arithmetic_circuits": "NOT_ESTABLISHED",
+    "quotient_reduced_to_couple": "NOT_CLAIMED",
+    "rh_proof": "NO"
+  },
+  "overall_status": "PASS",
+  "schema": "INFINITIES_BMCF_POLYNOMIAL_RESULT_V0_7",
+  "tests": {
+    "deterministic_random_polynomial_trials": {
+      "max_generated_monomial_degree": 6,
+      "status": "PASS",
+      "trials": 80
+    },
+    "exact_sparse_polynomial_factorization": {
+      "degrees": {
+        "p": 3,
+        "q": 4
+      },
+      "point_checks": {
+        "(-2, 1, 2)": {
+          "p": 65,
+          "q": -1
+        },
+        "(0, 0, 0)": {
+          "p": 3,
+          "q": -1
+        },
+        "(1, 2, 3)": {
+          "p": 56,
+          "q": 104
+        },
+        "(3, -1, 1)": {
+          "p": 67,
+          "q": -12
+        }
+      },
+      "status": "PASS",
+      "symbolic": {
+        "p": [
+          {"coeff": 3, "exp": [0, 0, 0]},
+          {"coeff": 5, "exp": [0, 1, 1]},
+          {"coeff": 2, "exp": [1, 0, 0]},
+          {"coeff": 7, "exp": [2, 0, 1]}
+        ],
+        "q": [
+          {"coeff": -1, "exp": [0, 0, 0]},
+          {"coeff": 1, "exp": [0, 0, 4]},
+          {"coeff": 4, "exp": [1, 1, 1]}
+        ]
+      }
+    },
+    "finite_multilinear_kernel_factorization": {
+      "arity": 3,
+      "status": "PASS",
+      "trials": 50
+    },
+    "ordered_noncommutative_word": {
+      "A_times_B": [2, 1, 1, 1],
+      "B_times_A": [1, 1, 1, 2],
+      "status": "PASS"
+    },
+    "strict_bmf_degree_separation": {
+      "couple_quadratic_degree": 2,
+      "max_degree_seen_for_fixed_scalar_linear_forms": 1,
+      "quadratic": [
+        {"coeff": 1, "exp": [1, 1, 0]}
+      ],
+      "status": "PASS"
+    }
+  }
+}
