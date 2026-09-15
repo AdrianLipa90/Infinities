@@ -1,0 +1,88 @@
+{
+  "cantor": {
+    "difference": 0.0,
+    "dimension_classical": 0.6309297535714574,
+    "dimension_from_shannon": 0.6309297535714574,
+    "status": "EXACT_FORMULA_NUMERICAL_EVALUATION"
+  },
+  "continued_fraction": {
+    "convergent": "54608393/38613965",
+    "error": 4.440892098500626e-16,
+    "float": 1.4142135623730947,
+    "sqrt2": 1.4142135623730951
+  },
+  "half_seam": {
+    "compactified": {
+      "B": 0.0,
+      "eta": 0.0,
+      "q": 0.5
+    },
+    "status": "EXACT_BY_DEFINITION",
+    "x": 1.0
+  },
+  "hilbert_shift": {
+    "1": {
+      "defect_rank": 1,
+      "fredholm_index": -1
+    },
+    "2": {
+      "defect_rank": 2,
+      "fredholm_index": -2
+    },
+    "8": {
+      "defect_rank": 8,
+      "fredholm_index": -8
+    }
+  },
+  "telescoping": {
+    "10": {
+      "inverse": 10,
+      "product": "1/10"
+    },
+    "100": {
+      "inverse": 100,
+      "product": "1/100"
+    },
+    "1000": {
+      "inverse": 1000,
+      "product": "1/1000"
+    },
+    "2": {
+      "inverse": 2,
+      "product": "1/2"
+    }
+  },
+  "two_adic": {
+    "0": {
+      "S_N": 1,
+      "real_size": 1,
+      "two_adic_distance_to_minus_one": "1/2"
+    },
+    "1": {
+      "S_N": 3,
+      "real_size": 3,
+      "two_adic_distance_to_minus_one": "1/4"
+    },
+    "10": {
+      "S_N": 2047,
+      "real_size": 2047,
+      "two_adic_distance_to_minus_one": "1/2048"
+    },
+    "20": {
+      "S_N": 2097151,
+      "real_size": 2097151,
+      "two_adic_distance_to_minus_one": "1/2097152"
+    },
+    "4": {
+      "S_N": 31,
+      "real_size": 31,
+      "two_adic_distance_to_minus_one": "1/32"
+    }
+  },
+  "zeta2": {
+    "dirichlet_N_20000": 1.6448840680982055,
+    "euler_prime_limit_20000": 1.644926479023469,
+    "status": "NUMERICAL_WITNESS",
+    "target_pi2_over_6": 1.6449340668482264
+  }
+}
