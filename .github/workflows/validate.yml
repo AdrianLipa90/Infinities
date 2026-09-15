@@ -14,5 +14,11 @@ jobs:
           python-version: '3.12'
       - name: Run exact/numerical controls
         run: python validation/validate_infinities_v0_1.py
+      - name: Run GREMLIN finite-catalog sweep controls
+        run: python validation/validate_gremlin_sweep_v0_1.py
+      - name: Run BMF v0.4 exact and OOD controls
+        run: python validation/validate_bmf_v0_4.py
       - name: Produce computation snapshot
         run: python computations/run_v0_1.py > computation_snapshot.json
+      - name: Produce BMF OOD snapshot
+        run: python computations/bmf_ood_v0_4.py > /tmp/bmf_ood_v0_4.stdout.json
