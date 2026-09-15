@@ -1,0 +1,60 @@
+{
+  "created_utc": "2026-09-15T21:37:58.231460+00:00",
+  "execution": {
+    "live_gremlin_mcp_broker_invoked": false,
+    "mode": "LOCAL_REFERENCE_HARNESS_WITH_GREMLIN_ROLE_CONTRACTS",
+    "noema_guard_failures": [],
+    "noema_prompt_admission_receipt_sha256": "bc6bd17207843d4e016517813c977043a83b91fe5f2232092be4268e6880f308",
+    "noema_working_state_sha256": "77a227c407b8d83b5f342fb739a19e39bd5f9c1856110eebb2e47dc48a0a234b",
+    "reason": "GREMLIN MCP endpoint is not exposed as a callable connector in this chat runtime."
+  },
+  "explicit_route": {
+    "ANT": "exhaustive finite subset search for minimal vocabulary under the catalog schema",
+    "BELZEBUB": "defensive candidate synthesis only; no canon promotion",
+    "HOUND": "falsify baseline grammar and universal half-seam claims",
+    "MANTIS": "deduplicate exact fingerprints and identify redundant branches",
+    "MOLE": "check local derivations and natural fixed-point counterexamples",
+    "OWL": "epistemic audit; prevent promotion from finite schema result to theorem",
+    "SPIDER": "relation/dependency/isomorphism scan across infinity fingerprints"
+  },
+  "gremlin_source": {
+    "main_sha": "b33d8c3fec014db4686856958c17e0e948192742",
+    "repository": "AdrianLipa90/GREMLIN",
+    "roles_source": "gremlin_mcp/core.py",
+    "router_source": "gremlin_mcp/router.py"
+  },
+  "outputs": [
+    "computations/gremlin_sweep_v0_1.py",
+    "results/gremlin_sweep_v0_1_result.json",
+    "results/falsification_report_v0_1.md",
+    "validation/validate_gremlin_sweep_v0_1.py"
+  ],
+  "preregistered_claims": {
+    "baseline_grammar": [
+      "SHIFT",
+      "SCALE",
+      "BRANCH",
+      "FACTOR",
+      "INVERT"
+    ],
+    "forbidden_promotions": [
+      "proof of Riemann Hypothesis",
+      "proof of Collatz conjecture",
+      "mathematical universality from finite benchmark",
+      "post-hoc analogy promoted to identity"
+    ],
+    "holdout_catalog_size": 13,
+    "minimality_scope": "FINITE_CATALOG_SCHEMA_ONLY",
+    "test_training_catalog_size": 19,
+    "universal_half_seam": "ATTEMPT_TO_FALSIFY"
+  },
+  "schema": "GREMLIN_INFINITIES_TASK_V0_1",
+  "target": {
+    "branch": "feat/computational-infinities-v0.1",
+    "main_must_remain_untouched": true,
+    "pre_task_head": "d4b5349488ad3ee7445550882d439502764fa1b3",
+    "repository": "AdrianLipa90/Infinities"
+  },
+  "task_id": "GREMLIN-INFINITIES-SWEEP-v0.1",
+  "task_sha256_without_self_hash": "01a80200368e29174fe67867fe6cb5eea01f851b0c2f6e7438503efef98c6f25"
+}
