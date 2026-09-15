@@ -1,4 +1,4 @@
-# Claim ledger v0.1
+# Claim ledger v0.4
 
 | ID | Claim | Status | Computational test |
 |---|---|---|---|
@@ -13,5 +13,14 @@
 | INF-009 | Gabriel family has finite volume iff `p>1/2`, finite area iff `p>1` | STANDARD_THEOREM | analytic criterion |
 | INF-010 | `rank(I-U^k U*^k)=k`, `ind(U^k)=-k` | STANDARD_THEOREM | validator |
 | INF-011 | Finite Euler/Dirichlet approximants approach `zeta(2)` | NUMERICAL_WITNESS | validator |
-| INF-012 | The present generator vocabulary is minimal | OPEN | requires counterexample search / model selection |
-| INF-013 | `[1/2]` is the unique universal seam across all infinity sectors | CONJECTURAL | requires sector-by-sector falsification |
+| INF-012 | The v0.1 five-generator vocabulary is minimal beyond its finite catalogue encoding | NOT ESTABLISHED / SUPERSEDED BY NORMALIZATION | `gremlin_sweep_v0_1.py` + v0.4 normalization |
+| INF-013 | `[1/2]` is the unique universal seam across all infinity sectors | FALSIFIED IN CATALOGUED NATURAL-SEAM TEST / UNIVERSAL CLAIM NOT SUPPORTED | `gremlin_sweep_v0_1.py` |
+| INF-014 | Every finite kernel operator `(T_K f)(y)=⊕_x K(y,x)⊗f(x)` factors exactly as `F ∘ M_K ∘ B` | EXACT (DEFINED CLASS) | `validate_bmf_v0_4.py` |
+| INF-015 | DFT, finite Markov transition, Boolean adjacency, divisibility-zeta, Walsh-Hadamard, Dirichlet convolution and finite tensor contraction admit the implemented BMF factorization | NUMERICAL/FINITE WITNESS | `bmf_ood_v0_4.py` |
+| INF-016 | A bare finite set of size `2..5` has no distinguished element equivariant under its full permutation group | FINITE OBSTRUCTION / EXACT ENUMERATION | `validate_bmf_v0_4.py` |
+| INF-017 | `MAP-BRANCH-FOLD` is a universal minimal grammar for all mathematics of infinity | OPEN / NOT CLAIMED | requires a theorem or counterexample beyond the implemented class |
+| INF-018 | Choice-like witness selection always requires a fourth primitive `SELECT` | OPEN / NOT CLAIMED | current result only isolates a symmetry obstruction without extra structure |
+
+## v0.4 firewall
+
+The exact statement in INF-014 is scoped to the explicitly defined finite kernel class. Infinite folds require an explicit topology, valuation, measure, completion, or convergence rule. Finite OOD coverage must not be promoted to a proof of universal BMF completeness, the Riemann Hypothesis, or the Collatz conjecture.
