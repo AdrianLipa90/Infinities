@@ -1,0 +1,97 @@
+{
+  "claims": {
+    "bmf_kernel_is_universal_computation_model": "NO",
+    "collatz_proof": "NO",
+    "finite_kernel_factorization_survives": "YES",
+    "iteration_fixpoint_is_already_identical_to_one_bmf_pass": "NO",
+    "quotient_is_proved_independent_fourth_primitive": "NO",
+    "rh_proof": "NO",
+    "universal_three_primitive_grammar": "NOT_ESTABLISHED"
+  },
+  "overall_status": "PASS",
+  "schema": "INFINITIES_BMF_BOUNDARY_RESULT_V0_5",
+  "tests": {
+    "boolean_semiring_single_layer": {
+      "representable_count": 4,
+      "status": "PASS",
+      "total_boolean_functions": 16,
+      "truth_tables": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    "boolean_semiring_two_layer_closure": {
+      "hidden_width_to_representable_count": {
+        "1": 4,
+        "2": 4,
+        "3": 4
+      },
+      "status": "PASS"
+    },
+    "coequalizer_partition_distribution_A2_to_B3": {
+      "1+1+1": 9,
+      "2+1": 48,
+      "3": 24
+    },
+    "pushout_cardinality_distribution_A2_B2_C2": {
+      "2": 12,
+      "3": 4
+    },
+    "reachability_requires_iteration": {
+      "after_one_pass": [
+        1,
+        1,
+        0
+      ],
+      "after_two_passes": [
+        1,
+        1,
+        1
+      ],
+      "initial": [
+        1,
+        0,
+        0
+      ],
+      "status": "PASS"
+    },
+    "real_square_nonadditivity": {
+      "T_2_plus_3": 25,
+      "T_2_plus_T_3": 13,
+      "status": "PASS"
+    },
+    "unrestricted_binary_fold_warning": {
+      "interpretation": "TAUTOLOGICAL_IF_TARGET_IS_HIDDEN_IN_FOLD",
+      "representable_count_if_fold_may_be_target_function": 16,
+      "status": "PASS",
+      "total_boolean_functions": 16
+    },
+    "unrestricted_unary_map_fixed_fold_counts": {
+      "AND": 10,
+      "OR": 10,
+      "XOR": 8
+    }
+  }
+}
