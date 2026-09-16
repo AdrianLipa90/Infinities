@@ -1,4 +1,4 @@
-# Claim ledger v0.8
+# Claim ledger v0.9
 
 | ID | Claim | Status | Computational test |
 |---|---|---|---|
@@ -18,7 +18,7 @@
 | INF-014 | Every finite kernel operator `(T_K f)(y)=⊕_x K(y,x)⊗f(x)` factors exactly as `F ∘ M_K ∘ B` | EXACT (DEFINED CLASS) | `validate_bmf_v0_4.py` |
 | INF-015 | DFT, finite Markov transition, Boolean adjacency, divisibility-zeta, Walsh-Hadamard, Dirichlet convolution and finite tensor contraction admit the implemented BMF factorization | NUMERICAL/FINITE WITNESS | `bmf_ood_v0_4.py` |
 | INF-016 | A bare finite set of size `2..5` has no distinguished element equivariant under its full permutation group | FINITE OBSTRUCTION / EXACT ENUMERATION | `validate_bmf_v0_4.py` |
-| INF-017 | `MAP-BRANCH-FOLD` is a universal minimal grammar for all mathematics of infinity | OPEN / NOT CLAIMED | v0.5-v0.8 expose boundaries beyond the strict finite-kernel class |
+| INF-017 | `MAP-BRANCH-FOLD` is a universal minimal grammar for all mathematics of infinity | OPEN / NOT CLAIMED | v0.5-v0.9 expose boundaries beyond the strict finite-kernel class |
 | INF-018 | Choice-like witness selection always requires a fourth primitive `SELECT` | OPEN / NOT CLAIMED | current result only isolates a symmetry obstruction without extra structure |
 | INF-019 | The two-input/one-output Boolean-semiring kernel-BMF class contains exactly four of the sixteen Boolean functions | EXACT FINITE CLASSIFICATION | `validate_bmf_boundary_v0_5.py` |
 | INF-020 | Stacking finite Boolean-semiring kernel-BMF layers does not escape semimodule linearity or yield functional completeness | EXACT ALGEBRAIC CLOSURE; FINITE ENUMERATION WITNESS | `bmf_boundary_v0_5.py` |
@@ -30,7 +30,7 @@
 | INF-026 | Over Boolean variables/constants, closure under fixed OR and dynamic AND contains exactly the six two-variable monotone Boolean functions | EXACT FINITE CLASSIFICATION | `validate_fourth_operator_v0_6.py` |
 | INF-027 | With the separately fixed local unary library `{ZERO, ONE, ID, NOT}`, dynamic AND plus OR-fold realizes all 16 two-variable Boolean functions; general finite Boolean representation follows by DNF | EXACT FINITE ENUMERATION + STANDARD DNF CONSTRUCTION | `fourth_operator_search_v0_6.py` |
 | INF-028 | Fixed `ITE` with constants/variables is Boolean-functionally complete by Shannon expansion | STANDARD BOOLEAN CONSTRUCTION / FINITE ENUMERATION WITNESS | `fourth_operator_search_v0_6.py` |
-| INF-029 | `COUPLE` is the unique or universally minimal fourth primitive | OPEN / NOT CLAIMED | v0.7-v0.8 prove scoped polynomial results, not uniqueness across grammars |
+| INF-029 | `COUPLE` is the unique or universally minimal fourth primitive | OPEN / NOT CLAIMED | v0.7-v0.9 prove scoped polynomial results and expose distinct non-polynomial boundaries |
 | INF-030 | One optional software `AUX` slot with typed variants is one mathematical fourth operator | FALSE AS STATED / TYPE DISTINCTION PRESERVED | `FOURTH_OPERATOR_SEARCH_V0_6.md` |
 | INF-031 | Every finite left-coefficient word-polynomial over a supplied semiring-like algebra factors exactly through typed `BRANCH -> MAP -> COUPLE -> FOLD` | EXACT (DEFINED CLASS) | `validate_bmcf_v0_7.py` |
 | INF-032 | Over a commutative semiring, every finite polynomial with fixed coefficients is BMCF-representable | EXACT COROLLARY OF INF-031 | `bmcf_polynomial_v0_7.py` |
@@ -42,7 +42,13 @@
 | INF-038 | With a supplied unit/scalar source, a finite polynomial target requires at least one `COUPLE` iff its dynamic total degree exceeds one | EXACT CONDITIONAL OBSTRUCTION (DEFINED CLASS) | `bmcf_obstruction_v0_8.py` |
 | INF-039 | A nonzero finite polynomial of degree `d>=1` has exact minimal binary-COUPLE nesting depth `ceil(log2 d)` in the BMCF polynomial grammar | EXACT LOWER+UPPER BOUND (DEFINED CLASS) | `validate_bmcf_obstruction_v0_8.py` |
 | INF-040 | The v0.8 degree/depth theorem is novel relative to arithmetic-circuit multiplicative-depth literature | NOT ESTABLISHED / NOT CLAIMED | requires literature comparison |
+| INF-041 | For nonconstant univariate polynomials over an integral domain, `deg(P∘Q)=deg(P)deg(Q)`; polynomial composition therefore stays inside the v0.8 degree grammar | STANDARD/EXACT POLYNOMIAL THEOREM IN STATED DOMAIN | `validate_bmcf_boundary_v0_9.py` |
+| INF-042 | Repeated squaring `S_{k+1}=S_k^2` has degree `2^k` and exact minimal binary-COUPLE depth `k` in the polynomial BMCF grammar | EXACT COROLLARY OF INF-039 + COMPOSITION/DEGREE CONSTRUCTION | `bmcf_boundary_v0_9.py` |
+| INF-043 | The formal rational function `1/x` over `Q` is outside finite polynomial BMCF; `omega_C(1/x)` is undefined rather than a larger numeric depth | EXACT TYPE/ALGEBRAIC BOUNDARY | `validate_bmcf_boundary_v0_9.py` |
+| INF-044 | The real function `|x|` is not polynomial although each of its two linear branches has degree one; branchwise degree therefore does not detect gated/piecewise structure | EXACT POLYNOMIAL IDENTITY OBSTRUCTION | `validate_bmcf_boundary_v0_9.py` |
+| INF-045 | `omega_C` is a universal scalar measure of nonlinearity across polynomial, rational, and piecewise targets | FALSE / OUTSIDE DEFINED DOMAIN | `bmcf_boundary_v0_9.py` |
+| INF-046 | `RECIP` or `GATE` is proved globally minimal or unique outside the polynomial grammar | OPEN / NOT CLAIMED | v0.9 proves only distinct typed boundary witnesses |
 
-## v0.8 firewall
+## v0.9 firewall
 
-The exact v0.8 statements are scoped to the finite polynomial BMCF grammar with degree-one dynamic generators, fixed scalar coefficients, a supplied unit/scalar source, finite additive FOLD, and binary multiplicative COUPLE. The degree obstruction makes `COUPLE` conditionally necessary for polynomial degree greater than one inside this grammar; it does not prove that `COUPLE` is the unique nonlinear primitive or globally minimal across alternative grammars. `FIXPOINT`, `QUOTIENT/COEQUALIZE`, and symmetry-breaking `SELECT` remain type-distinct unresolved boundaries. Infinite folds require explicit topology, valuation, measure, completion, or convergence structure. The degree/depth relationship is close to standard arithmetic-circuit reasoning, so novelty is not claimed without literature comparison. No result here proves the Riemann Hypothesis, the Collatz conjecture, or universal completeness of BMCF.
+The exact `omega_C` theorem remains scoped to finite polynomial BMCF. Polynomial composition over the stated algebraic domain preserves that scope, and repeated squaring saturates the degree/depth bound. Dynamic reciprocal and piecewise absolute value are exact counterexamples to exporting `omega_C` as a universal nonlinearity scalar: they lie outside the polynomial grammar for different reasons. This does not prove global minimality of `RECIP`, `GATE`, `COUPLE`, or any single AUX family. `FIXPOINT`, `QUOTIENT/COEQUALIZE`, and symmetry-breaking `SELECT` remain separate unresolved boundaries. Infinite folds still require explicit topology, valuation, measure, completion, or convergence structure. Novelty relative to circuit-complexity, rational-circuit, and gated-circuit literature is not claimed without comparison. No result here proves the Riemann Hypothesis, the Collatz conjecture, or universal completeness of BMCF.
