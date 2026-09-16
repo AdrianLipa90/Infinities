@@ -214,12 +214,15 @@ The canonical CI workflow runs every validator from the original controls throug
 A v1.0 release candidate may be merged to `main` only if:
 
 ```text
-all required deterministic result snapshots report PASS,
+each required result matches its preregistered expected verdict,
+including intentional FAIL results used as falsification evidence,
 all validators pass,
 CLAIMS.md retains the epistemic firewall,
 VERSION is exactly 1.0.0,
 no open-problem proof claim is introduced.
 ```
+
+An intentional negative result such as the GREMLIN holdout failure or falsified universal-half hypothesis is a **successful control outcome** when it matches the preregistered expectation. The freeze must never rewrite such a result to `PASS` merely to make the release look green.
 
 ## 14. Freeze meaning
 
