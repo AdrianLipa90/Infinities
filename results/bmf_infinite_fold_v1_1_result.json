@@ -1,0 +1,176 @@
+{
+  "alternating_harmonic_prefixes": [
+    {
+      "n": 2,
+      "partial": "1/2"
+    },
+    {
+      "n": 4,
+      "partial": "7/12"
+    },
+    {
+      "n": 8,
+      "partial": "533/840"
+    },
+    {
+      "n": 16,
+      "partial": "95549/144144"
+    }
+  ],
+  "c00_incomplete_space_tail": [
+    {
+      "after_n": 0,
+      "tail_norm": "1/1"
+    },
+    {
+      "after_n": 1,
+      "tail_norm": "1/2"
+    },
+    {
+      "after_n": 2,
+      "tail_norm": "1/4"
+    },
+    {
+      "after_n": 4,
+      "tail_norm": "1/16"
+    },
+    {
+      "after_n": 8,
+      "tail_norm": "1/256"
+    },
+    {
+      "after_n": 16,
+      "tail_norm": "1/65536"
+    }
+  ],
+  "claims": {
+    "absolute_banach_fold_extension": "PASS",
+    "completeness_counterexample_c00": "PASS",
+    "conditional_series_not_promoted_to_unordered_fold": "PASS",
+    "l2_does_not_imply_additive_fold": "PASS",
+    "novelty": "NOT_ESTABLISHED",
+    "row_l1_kernel_linf_bound": "PASS",
+    "universal_infinite_fold": "NOT_CLAIMED"
+  },
+  "finite_row_bound_witness": {
+    "actual": "229/180",
+    "bound": "53/10",
+    "pass": true
+  },
+  "firewall": {
+    "absolute_convergence_is_sufficient_not_universally_necessary_in_all_banach_spaces": true,
+    "finite_prefix_controls_are_not_infinite_proofs": true,
+    "no_collatz_claim": true,
+    "no_rh_claim": true,
+    "no_twin_prime_claim": true
+  },
+  "geometric_absolute_series": [
+    {
+      "expected_sum": "2/1",
+      "n": 0,
+      "partial": "0/1",
+      "partial_plus_tail": "2/1",
+      "pass": true,
+      "tail": "2/1"
+    },
+    {
+      "expected_sum": "2/1",
+      "n": 1,
+      "partial": "1/1",
+      "partial_plus_tail": "2/1",
+      "pass": true,
+      "tail": "1/1"
+    },
+    {
+      "expected_sum": "2/1",
+      "n": 2,
+      "partial": "3/2",
+      "partial_plus_tail": "2/1",
+      "pass": true,
+      "tail": "1/2"
+    },
+    {
+      "expected_sum": "2/1",
+      "n": 4,
+      "partial": "15/8",
+      "partial_plus_tail": "2/1",
+      "pass": true,
+      "tail": "1/8"
+    },
+    {
+      "expected_sum": "2/1",
+      "n": 8,
+      "partial": "255/128",
+      "partial_plus_tail": "2/1",
+      "pass": true,
+      "tail": "1/128"
+    },
+    {
+      "expected_sum": "2/1",
+      "n": 16,
+      "partial": "65535/32768",
+      "partial_plus_tail": "2/1",
+      "pass": true,
+      "tail": "1/32768"
+    }
+  ],
+  "harmonic_divergence_dyadic_certificate": [
+    {
+      "dyadic_lower_bound": "1/1",
+      "m": 0,
+      "n": 1,
+      "pass": true
+    },
+    {
+      "dyadic_lower_bound": "3/2",
+      "m": 1,
+      "n": 2,
+      "pass": true
+    },
+    {
+      "dyadic_lower_bound": "2/1",
+      "m": 2,
+      "n": 4,
+      "pass": true
+    },
+    {
+      "dyadic_lower_bound": "5/2",
+      "m": 3,
+      "n": 8,
+      "pass": true
+    },
+    {
+      "dyadic_lower_bound": "3/1",
+      "m": 4,
+      "n": 16,
+      "pass": true
+    },
+    {
+      "dyadic_lower_bound": "7/2",
+      "m": 5,
+      "n": 32,
+      "pass": true
+    },
+    {
+      "dyadic_lower_bound": "4/1",
+      "m": 6,
+      "n": 64,
+      "pass": true
+    },
+    {
+      "dyadic_lower_bound": "9/2",
+      "m": 7,
+      "n": 128,
+      "pass": true
+    },
+    {
+      "dyadic_lower_bound": "5/1",
+      "m": 8,
+      "n": 256,
+      "pass": true
+    }
+  ],
+  "overall_status": "PASS",
+  "reciprocal_sequence_square_sum_upper_bound": "2/1",
+  "schema": "INFINITIES_BMF_INFINITE_FOLD_V1_1_RESULT"
+}
