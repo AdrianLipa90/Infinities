@@ -1,4 +1,4 @@
-# Claim ledger v0.9
+# Claim ledger v0.10
 
 | ID | Claim | Status | Computational test |
 |---|---|---|---|
@@ -17,9 +17,9 @@
 | INF-013 | `[1/2]` is the unique universal seam across all infinity sectors | FALSIFIED IN CATALOGUED NATURAL-SEAM TEST / UNIVERSAL CLAIM NOT SUPPORTED | `gremlin_sweep_v0_1.py` |
 | INF-014 | Every finite kernel operator `(T_K f)(y)=⊕_x K(y,x)⊗f(x)` factors exactly as `F ∘ M_K ∘ B` | EXACT (DEFINED CLASS) | `validate_bmf_v0_4.py` |
 | INF-015 | DFT, finite Markov transition, Boolean adjacency, divisibility-zeta, Walsh-Hadamard, Dirichlet convolution and finite tensor contraction admit the implemented BMF factorization | NUMERICAL/FINITE WITNESS | `bmf_ood_v0_4.py` |
-| INF-016 | A bare finite set of size `2..5` has no distinguished element equivariant under its full permutation group | FINITE OBSTRUCTION / EXACT ENUMERATION | `validate_bmf_v0_4.py` |
-| INF-017 | `MAP-BRANCH-FOLD` is a universal minimal grammar for all mathematics of infinity | OPEN / NOT CLAIMED | v0.5-v0.9 expose boundaries beyond the strict finite-kernel class |
-| INF-018 | Choice-like witness selection always requires a fourth primitive `SELECT` | OPEN / NOT CLAIMED | current result only isolates a symmetry obstruction without extra structure |
+| INF-016 | A bare finite set of size `2..5` has no distinguished element equivariant under its full permutation group | FINITE OBSTRUCTION / EXACT ENUMERATION; SUBSUMED BY INF-051 | `validate_bmf_v0_4.py` |
+| INF-017 | `MAP-BRANCH-FOLD` is a universal minimal grammar for all mathematics of infinity | OPEN / NOT CLAIMED | v0.5-v0.10 expose typed boundaries beyond the strict finite-kernel class |
+| INF-018 | Choice-like witness selection always requires a fourth primitive `SELECT` | OPEN / NOT CLAIMED | selector obstruction proves missing symmetry-breaking structure, not universal primitive minimality |
 | INF-019 | The two-input/one-output Boolean-semiring kernel-BMF class contains exactly four of the sixteen Boolean functions | EXACT FINITE CLASSIFICATION | `validate_bmf_boundary_v0_5.py` |
 | INF-020 | Stacking finite Boolean-semiring kernel-BMF layers does not escape semimodule linearity or yield functional completeness | EXACT ALGEBRAIC CLOSURE; FINITE ENUMERATION WITNESS | `bmf_boundary_v0_5.py` |
 | INF-021 | Over ordinary real addition/multiplication, `x -> x^2` is outside the strict one-input/one-output kernel-BMF class | EXACT COUNTEREXAMPLE | `bmf_boundary_v0_5.py` |
@@ -30,7 +30,7 @@
 | INF-026 | Over Boolean variables/constants, closure under fixed OR and dynamic AND contains exactly the six two-variable monotone Boolean functions | EXACT FINITE CLASSIFICATION | `validate_fourth_operator_v0_6.py` |
 | INF-027 | With the separately fixed local unary library `{ZERO, ONE, ID, NOT}`, dynamic AND plus OR-fold realizes all 16 two-variable Boolean functions; general finite Boolean representation follows by DNF | EXACT FINITE ENUMERATION + STANDARD DNF CONSTRUCTION | `fourth_operator_search_v0_6.py` |
 | INF-028 | Fixed `ITE` with constants/variables is Boolean-functionally complete by Shannon expansion | STANDARD BOOLEAN CONSTRUCTION / FINITE ENUMERATION WITNESS | `fourth_operator_search_v0_6.py` |
-| INF-029 | `COUPLE` is the unique or universally minimal fourth primitive | OPEN / NOT CLAIMED | v0.7-v0.9 prove scoped polynomial results and expose distinct non-polynomial boundaries |
+| INF-029 | `COUPLE` is the unique or universally minimal fourth primitive | OPEN / NOT CLAIMED | v0.7-v0.10 prove scoped polynomial results and distinct typed boundaries |
 | INF-030 | One optional software `AUX` slot with typed variants is one mathematical fourth operator | FALSE AS STATED / TYPE DISTINCTION PRESERVED | `FOURTH_OPERATOR_SEARCH_V0_6.md` |
 | INF-031 | Every finite left-coefficient word-polynomial over a supplied semiring-like algebra factors exactly through typed `BRANCH -> MAP -> COUPLE -> FOLD` | EXACT (DEFINED CLASS) | `validate_bmcf_v0_7.py` |
 | INF-032 | Over a commutative semiring, every finite polynomial with fixed coefficients is BMCF-representable | EXACT COROLLARY OF INF-031 | `bmcf_polynomial_v0_7.py` |
@@ -48,7 +48,14 @@
 | INF-044 | The real function `|x|` is not polynomial although each of its two linear branches has degree one; branchwise degree therefore does not detect gated/piecewise structure | EXACT POLYNOMIAL IDENTITY OBSTRUCTION | `validate_bmcf_boundary_v0_9.py` |
 | INF-045 | `omega_C` is a universal scalar measure of nonlinearity across polynomial, rational, and piecewise targets | FALSE / OUTSIDE DEFINED DOMAIN | `bmcf_boundary_v0_9.py` |
 | INF-046 | `RECIP` or `GATE` is proved globally minimal or unique outside the polynomial grammar | OPEN / NOT CLAIMED | v0.9 proves only distinct typed boundary witnesses |
+| INF-047 | Every inflationary map `F:{0,1}^n->{0,1}^n` reaches a fixed point from any start after at most `n` strict state changes | EXACT FINITE THEOREM | `validate_bmcf_final_boundary_v0_10.py` |
+| INF-048 | Finite Boolean reachability from one seed can be resolved by bounded iteration; this does not establish `FIX` as an independent primitive | EXACT COROLLARY / INDEPENDENT PRIMITIVE NOT ESTABLISHED | `bmcf_final_boundary_v0_10.py` |
+| INF-049 | Partitions of a finite set are in bijection with equivalence relations on that set, providing a fixed-carrier representation of finite quotients | STANDARD/EXACT FINITE THEOREM | `validate_bmcf_final_boundary_v0_10.py` |
+| INF-050 | `QUOTIENT` is a representation-independent mandatory fourth primitive | NOT ESTABLISHED / REPRESENTATION-DEPENDENT TYPE BOUNDARY | `bmcf_final_boundary_v0_10.py` |
+| INF-051 | No permutation-equivariant distinguished-element selector exists on a bare finite set of cardinality at least two | EXACT GENERAL FINITE THEOREM | `validate_bmcf_final_boundary_v0_10.py` |
+| INF-052 | A supplied total order removes that selector obstruction via `min`; the missing ingredient is symmetry-breaking structure | EXACT CONSTRUCTION RELATIVE TO ORDER | `validate_bmcf_final_boundary_v0_10.py` |
+| INF-053 | One universal fourth mathematical operator has been established across the polynomial, rational, gated, fixed-point, quotient, and selection boundaries | NOT ESTABLISHED / NOT CLAIMED | typed AUX architecture remains an implementation/type discipline |
 
-## v0.9 firewall
+## v0.10 firewall
 
-The exact `omega_C` theorem remains scoped to finite polynomial BMCF. Polynomial composition over the stated algebraic domain preserves that scope, and repeated squaring saturates the degree/depth bound. Dynamic reciprocal and piecewise absolute value are exact counterexamples to exporting `omega_C` as a universal nonlinearity scalar: they lie outside the polynomial grammar for different reasons. This does not prove global minimality of `RECIP`, `GATE`, `COUPLE`, or any single AUX family. `FIXPOINT`, `QUOTIENT/COEQUALIZE`, and symmetry-breaking `SELECT` remain separate unresolved boundaries. Infinite folds still require explicit topology, valuation, measure, completion, or convergence structure. Novelty relative to circuit-complexity, rational-circuit, and gated-circuit literature is not claimed without comparison. No result here proves the Riemann Hypothesis, the Collatz conjecture, or universal completeness of BMCF.
+The finite programme now separates exact data-plane theorems from control, representation, and symmetry boundaries. `COUPLE` is conditionally necessary with exact depth only inside the defined finite polynomial grammar. Finite inflationary Boolean fixed points admit bounded unrolling, so their existence does not prove `FIX` primitive independence. Finite quotient structure can be encoded as an equivalence relation on a fixed carrier, so changing quotient cardinality alone does not prove `QUOTIENT` primitive independence. Bare finite sets of size at least two admit no permutation-equivariant canonical selector, but a supplied order resolves that obstruction; this proves a symmetry-breaking requirement, not universal `SELECT` minimality. `RECIP` and `GATE` remain distinct out-of-polynomial boundary witnesses. Infinite/transfinite processes, arbitrary colimits, Choice-sensitive constructions, and analytic completion remain outside these finite closure theorems. Novelty over established circuit/category/selection literature is not claimed without comparison. No result here proves the Riemann Hypothesis, the Collatz conjecture, or universal completeness of BMF/BMCF.
