@@ -1,7 +1,7 @@
 {
   "schema": "INFINITIES_V1_0_FREEZE_MANIFEST",
   "version": "1.0.0",
-  "release_status": "CANDIDATE_PENDING_CI",
+  "release_status": "V1_0_FROZEN",
   "required_result_expectations": {
     "results/gremlin_sweep_v0_1_result.json": {
       "baseline_fits_training_catalog": "PASS",
