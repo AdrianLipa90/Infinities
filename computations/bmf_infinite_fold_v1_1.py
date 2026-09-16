@@ -56,14 +56,13 @@ def main() -> None:
         harmonic.append({
             "m": m,
             "n": n,
-            "H_n": qstr(actual),
             "dyadic_lower_bound": qstr(lower),
             "pass": actual >= lower,
         })
 
     alternating = [
         {"n": n, "partial": qstr(alternating_harmonic_partial_sum(n))}
-        for n in (2, 4, 8, 16, 32, 64)
+        for n in (2, 4, 8, 16)
     ]
 
     result = {
