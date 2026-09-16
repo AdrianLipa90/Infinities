@@ -2,16 +2,22 @@
   "schema": "INFINITIES_V1_0_FREEZE_MANIFEST",
   "version": "1.0.0",
   "release_status": "CANDIDATE_PENDING_CI",
-  "required_result_snapshots": [
-    "results/gremlin_sweep_v0_1_result.json",
-    "results/bmf_ood_v0_4_result.json",
-    "results/bmf_boundary_v0_5_result.json",
-    "results/fourth_operator_search_v0_6_result.json",
-    "results/bmcf_polynomial_v0_7_result.json",
-    "results/bmcf_obstruction_v0_8_result.json",
-    "results/bmcf_boundary_v0_9_result.json",
-    "results/bmcf_final_boundary_v0_10_result.json"
-  ],
+  "required_result_expectations": {
+    "results/gremlin_sweep_v0_1_result.json": {
+      "baseline_fits_training_catalog": "PASS",
+      "baseline_generalizes_to_all_holdouts": "FAIL",
+      "finite_catalog_extended_grammar": "PASS",
+      "universal_half_seam": "FAIL",
+      "minimality_is_mathematical_theorem": "NO"
+    },
+    "results/bmf_ood_v0_4_result.json": {"overall_status": "PASS"},
+    "results/bmf_boundary_v0_5_result.json": {"overall_status": "PASS"},
+    "results/fourth_operator_search_v0_6_result.json": {"overall_status": "PASS"},
+    "results/bmcf_polynomial_v0_7_result.json": {"overall_status": "PASS"},
+    "results/bmcf_obstruction_v0_8_result.json": {"overall_status": "PASS"},
+    "results/bmcf_boundary_v0_9_result.json": {"overall_status": "PASS"},
+    "results/bmcf_final_boundary_v0_10_result.json": {"overall_status": "PASS"}
+  },
   "required_documents": [
     "FOUNDATIONS.md",
     "CLAIMS.md",
@@ -25,7 +31,8 @@
     "INFINITIES_V1_0.md"
   ],
   "freeze_invariants": {
-    "all_required_result_snapshots_must_pass": true,
+    "all_required_result_expectations_must_match": true,
+    "intentional_negative_results_are_preserved": true,
     "riemann_hypothesis_proof_claim": false,
     "collatz_proof_claim": false,
     "twin_prime_proof_claim": false,
