@@ -1,0 +1,61 @@
+{
+  "claims": {
+    "bare_finite_set_equivariant_selector_exists_for_n_ge_2": "NO_EXACT_THEOREM",
+    "collatz_proof": "NO",
+    "finite_inflationary_boolean_fix_has_bounded_horizon": "EXACT_THEOREM",
+    "finite_partition_has_fixed_carrier_equivalence_representation": "EXACT_THEOREM",
+    "finite_reachability_fix_requires_independent_primitive": "NO_NOT_ESTABLISHED_BOUNDED_UNROLLING_EXISTS",
+    "order_supplies_selector_structure": "YES",
+    "quotient_is_representation_independent_fourth_primitive": "NO_NOT_ESTABLISHED",
+    "rh_proof": "NO",
+    "single_universal_fourth_operator": "NOT_ESTABLISHED",
+    "typed_aux_architecture": "SUPPORTED_AS_SOFTWARE_AND_TYPE_DISCIPLINE_NOT_UNIVERSALITY_THEOREM"
+  },
+  "overall_status": "PASS",
+  "schema": "INFINITIES_BMCF_FINAL_BOUNDARY_RESULT_V0_10",
+  "tests": {
+    "bare_selector_symmetry_and_ordered_repair": {
+      "bare_equivariant_selector_exists": {
+        "2": false,
+        "3": false,
+        "4": false,
+        "5": false,
+        "6": false,
+        "7": false
+      },
+      "ordered_min_examples": {
+        "3,1,2": 1,
+        "9,-4,7": -4
+      },
+      "status": "PASS"
+    },
+    "exhaustive_finite_reachability_unrolling": {
+      "dimensions": {
+        "1": {"bound": 0, "expected_graph_count": 1, "graph_count": 1, "max_strict_changes": 0, "status": "PASS"},
+        "2": {"bound": 1, "expected_graph_count": 4, "graph_count": 4, "max_strict_changes": 1, "status": "PASS"},
+        "3": {"bound": 2, "expected_graph_count": 64, "graph_count": 64, "max_strict_changes": 2, "status": "PASS"},
+        "4": {"bound": 3, "expected_graph_count": 4096, "graph_count": 4096, "max_strict_changes": 3, "status": "PASS"}
+      },
+      "status": "PASS"
+    },
+    "exhaustive_inflationary_boolean_fixed_points": {
+      "dimensions": {
+        "1": {"bound": 1, "expected_map_count": 2, "map_count": 2, "max_strict_changes": 1, "status": "PASS"},
+        "2": {"bound": 2, "expected_map_count": 16, "map_count": 16, "max_strict_changes": 2, "status": "PASS"},
+        "3": {"bound": 3, "expected_map_count": 4096, "map_count": 4096, "max_strict_changes": 3, "status": "PASS"}
+      },
+      "status": "PASS"
+    },
+    "finite_partition_equivalence_roundtrip": {
+      "dimensions": {
+        "0": {"equivalence_matrix_count": 1, "expected_bell_count": 1, "partition_count": 1, "roundtrip_exact": true, "status": "PASS"},
+        "1": {"equivalence_matrix_count": 1, "expected_bell_count": 1, "partition_count": 1, "roundtrip_exact": true, "status": "PASS"},
+        "2": {"equivalence_matrix_count": 2, "expected_bell_count": 2, "partition_count": 2, "roundtrip_exact": true, "status": "PASS"},
+        "3": {"equivalence_matrix_count": 5, "expected_bell_count": 5, "partition_count": 5, "roundtrip_exact": true, "status": "PASS"},
+        "4": {"equivalence_matrix_count": 15, "expected_bell_count": 15, "partition_count": 15, "roundtrip_exact": true, "status": "PASS"},
+        "5": {"equivalence_matrix_count": 52, "expected_bell_count": 52, "partition_count": 52, "roundtrip_exact": true, "status": "PASS"}
+      },
+      "status": "PASS"
+    }
+  }
+}
