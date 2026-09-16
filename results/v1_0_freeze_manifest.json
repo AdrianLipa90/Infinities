@@ -1,0 +1,49 @@
+{
+  "schema": "INFINITIES_V1_0_FREEZE_MANIFEST",
+  "version": "1.0.0",
+  "release_status": "CANDIDATE_PENDING_CI",
+  "required_result_snapshots": [
+    "results/gremlin_sweep_v0_1_result.json",
+    "results/bmf_ood_v0_4_result.json",
+    "results/bmf_boundary_v0_5_result.json",
+    "results/fourth_operator_search_v0_6_result.json",
+    "results/bmcf_polynomial_v0_7_result.json",
+    "results/bmcf_obstruction_v0_8_result.json",
+    "results/bmcf_boundary_v0_9_result.json",
+    "results/bmcf_final_boundary_v0_10_result.json"
+  ],
+  "required_documents": [
+    "FOUNDATIONS.md",
+    "CLAIMS.md",
+    "BMF_THEORY_V0_4.md",
+    "BMF_BOUNDARY_V0_5.md",
+    "FOURTH_OPERATOR_SEARCH_V0_6.md",
+    "BMCF_THEORY_V0_7.md",
+    "BMCF_CONDITIONAL_COUPLE_V0_8.md",
+    "BMCF_BOUNDARY_V0_9.md",
+    "BMCF_FINAL_BOUNDARY_V0_10.md",
+    "INFINITIES_V1_0.md"
+  ],
+  "freeze_invariants": {
+    "all_required_result_snapshots_must_pass": true,
+    "riemann_hypothesis_proof_claim": false,
+    "collatz_proof_claim": false,
+    "twin_prime_proof_claim": false,
+    "universal_fourth_operator_claim": false,
+    "universal_bmf_bmcf_completeness_claim": false,
+    "novelty_claim_without_literature_audit": false,
+    "open_boundaries_are_allowed_if_explicitly_typed": true
+  },
+  "final_architecture": {
+    "finite_kernel_data": "BRANCH -> MAP -> FOLD",
+    "finite_polynomial_data": "BRANCH -> MAP -> COUPLE[omega_C] -> FOLD",
+    "typed_aux_boundaries": [
+      "RECIP",
+      "GATE_ITE",
+      "ITERATE_FIX",
+      "QUOTIENT_COEQUALIZE",
+      "SELECT_WITH_STRUCTURE"
+    ]
+  },
+  "meaning_of_complete": "FIRST_FINITE_RESEARCH_PROGRAMME_FROZEN_WITH_SCOPED_RESULTS_AND_EXPLICIT_OPEN_BOUNDARIES"
+}
