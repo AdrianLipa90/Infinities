@@ -2,6 +2,8 @@
 
 A research programme on the mathematical structures of infinity.
 
+**Release status:** `v1.0.0` finite research-programme freeze. See `INFINITIES_V1_0.md` and `CLAIMS.md` for the exact theorem, falsification, boundary, and open-claim ledger.
+
 `Infinities` does **not** claim a proof of the Riemann Hypothesis, the Collatz conjecture, the Twin Prime conjecture, or any other open problem. Those problems are used here as distinct examples of how infinity appears through cardinality, iteration, spectral analysis, and arithmetic distribution.
 
 ## Scope
@@ -161,6 +163,18 @@ Every result in this repository should be typed explicitly as one of:
 
 Repository presence is not evidence of truth. Open problems remain open unless a complete proof is independently checkable and survives dedicated verification.
 
+## v1.0 finite operator programme
+
+The first finite operator programme is frozen at `v1.0.0`. Its strongest scoped results are:
+
+- exact `BRANCH -> MAP -> FOLD` factorization for the defined finite-kernel class;
+- exact finite word-polynomial and multilinear `BRANCH -> MAP -> COUPLE -> FOLD` factorization;
+- exact polynomial obstruction `omega_C(P)=ceil(log2 deg(P))` for minimal binary-COUPLE depth in the defined polynomial grammar;
+- exact boundaries showing that reciprocal, piecewise/gated, fixed-point, quotient, and selection structure cannot be collapsed into that degree invariant without changing the type of the problem;
+- preserved negative controls and falsified overpromotions rather than rewritten success labels.
+
+The freeze deliberately does **not** establish a universal minimal operator grammar or a single universal fourth mathematical operator.
+
 ## Status
 
-Initial operator framework established. Formal derivations, validators, and typed claim ledgers will be added incrementally.
+**v1.0.0 — finite research-programme freeze.** The first programme is closed as an auditable collection of scoped theorems, counterexamples, finite classifications, typed boundaries, and explicit open questions. `v1.0 COMPLETE` refers to that repository scope only; it does not mean that all mathematical infinities or the open problems named above are solved.
