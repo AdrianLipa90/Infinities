@@ -1,0 +1,86 @@
+{
+  "claims": {
+    "absolute_value_has_numeric_omega_C": "NO_OUTSIDE_DOMAIN",
+    "collatz_proof": "NO",
+    "gate_is_globally_minimal_new_primitive": "NOT_CLAIMED",
+    "novelty_relative_to_circuit_complexity": "NOT_ESTABLISHED",
+    "omega_C_is_universal_nonlinearity_measure": "NO",
+    "polynomial_composition_preserves_degree_grammar": "YES_UNIVARIATE_Q_WITNESS_AND_THEOREM",
+    "reciprocal_has_numeric_omega_C": "NO_OUTSIDE_DOMAIN",
+    "reciprocal_is_globally_minimal_new_primitive": "NOT_CLAIMED",
+    "repeated_squaring_depth_matches_omega_C": "YES",
+    "rh_proof": "NO",
+    "single_universal_fourth_operator": "NOT_ESTABLISHED"
+  },
+  "overall_status": "PASS",
+  "schema": "INFINITIES_BMCF_BOUNDARY_RESULT_V0_9",
+  "tests": {
+    "absolute_value_outside_polynomial_degree_bounds": {
+      "degree_bounds_checked": [
+        0,
+        24
+      ],
+      "exact_sample_values": {
+        "-1": "1",
+        "-2": "2",
+        "-5": "5",
+        "1": "1",
+        "2": "2",
+        "5": "5"
+      },
+      "failures": [],
+      "status": "PASS"
+    },
+    "omega_C_typed_domain_guard": {
+      "status": "PASS",
+      "values": {
+        "absolute_value": null,
+        "degree_9_polynomial": 4,
+        "linear_polynomial": 0,
+        "quadratic_polynomial": 1,
+        "reciprocal": null
+      }
+    },
+    "reciprocal_outside_polynomial_degree_bounds": {
+      "degree_bounds_checked": [
+        0,
+        24
+      ],
+      "exact_sample_values": {
+        "-1": "-1",
+        "-2": "-1/2",
+        "-5": "-1/5",
+        "1": "1",
+        "2": "1/2",
+        "5": "1/5"
+      },
+      "failures": [],
+      "status": "PASS"
+    },
+    "repeated_squaring_exact_omega": {
+      "rows": [
+        {"degree": 1, "depth": 0, "omega_C": 0},
+        {"degree": 2, "depth": 1, "omega_C": 1},
+        {"degree": 4, "depth": 2, "omega_C": 2},
+        {"degree": 8, "depth": 3, "omega_C": 3},
+        {"degree": 16, "depth": 4, "omega_C": 4},
+        {"degree": 32, "depth": 5, "omega_C": 5},
+        {"degree": 64, "depth": 6, "omega_C": 6},
+        {"degree": 128, "depth": 7, "omega_C": 7},
+        {"degree": 256, "depth": 8, "omega_C": 8},
+        {"degree": 512, "depth": 9, "omega_C": 9},
+        {"degree": 1024, "depth": 10, "omega_C": 10},
+        {"degree": 2048, "depth": 11, "omega_C": 11},
+        {"degree": 4096, "depth": 12, "omega_C": 12}
+      ],
+      "status": "PASS"
+    },
+    "univariate_polynomial_composition_degree": {
+      "max_composed_degree": 64,
+      "max_inner_degree": 8,
+      "max_outer_degree": 8,
+      "status": "PASS",
+      "trials": 250
+    }
+  }
+}
