@@ -1,5 +1,4 @@
 import Std
-import Std.Tactic.Omega
 
 namespace Formal
 
@@ -30,8 +29,11 @@ theorem initialIndex_not_in_successorRange
     (k i : Nat) (h : i < k) :
     ¬ ∃ n : Nat, successorShift k n = i := by
   rintro ⟨n, hn⟩
-  simp [successorShift] at hn
-  omega
+  have hk : k ≤ successorShift k n := by
+    simpa [successorShift, Nat.add_comm] using (Nat.le_add_left k n)
+  have hlt : i < successorShift k n := Nat.lt_of_lt_of_le h hk
+  rw [hn] at hlt
+  exact Nat.lt_irrefl i hlt
 
 theorem successorShift_zero (n : Nat) :
     successorShift 0 n = n := by
