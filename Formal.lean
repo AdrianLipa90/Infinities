@@ -15,14 +15,14 @@ theorem successorShift_injective (k : Nat) :
   intro a b h
   exact Nat.add_right_cancel h
 
-theorem successorShift_monotone (k : Nat) :
-    Monotone (successorShift k) := by
-  intro a b h
+theorem successorShift_preserves_le
+    (k a b : Nat) (h : a ≤ b) :
+    successorShift k a ≤ successorShift k b := by
   exact Nat.add_le_add_right h k
 
-theorem successorShift_strictMono (k : Nat) :
-    StrictMono (successorShift k) := by
-  intro a b h
+theorem successorShift_preserves_lt
+    (k a b : Nat) (h : a < b) :
+    successorShift k a < successorShift k b := by
   exact Nat.add_lt_add_right h k
 
 theorem initialIndex_not_in_successorRange
