@@ -39,4 +39,29 @@ theorem successorShift_zero (n : Nat) :
     successorShift 0 n = n := by
   simp [successorShift]
 
+
+/-- Accelerated odd Collatz output when the 2-adic exponent is supplied. -/
+def acceleratedOddAtExponent (n a : Nat) : Nat :=
+  (3 * n + 1) / (2 ^ a)
+
+/-- Explicit branch word: one odd branch followed by a even branches. -/
+def oddEvenParityBlock (a : Nat) : List Bool :=
+  true :: List.replicate a false
+
+theorem oddEvenParityBlock_length (a : Nat) :
+    (oddEvenParityBlock a).length = a + 1 := by
+  simp [oddEvenParityBlock, Nat.add_comm]
+
+/--
+If 3n+1 has the supplied exact power-of-two factorization u*2^a, the
+accelerated branch returns u. This is local arithmetic only and says nothing
+about global Collatz convergence.
+-/
+theorem acceleratedOddAtExponent_of_factorization
+    (n a u : Nat)
+    (h : 3 * n + 1 = u * (2 ^ a)) :
+    acceleratedOddAtExponent n a = u := by
+  rw [acceleratedOddAtExponent, h]
+  exact Nat.mul_div_cancel u (Nat.two_pow_pos a)
+
 end Formal
