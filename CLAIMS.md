@@ -1,4 +1,4 @@
-# Claim ledger v0.10
+# Claim ledger v0.10 + post-v1.0 research extensions
 
 | ID | Claim | Status | Computational test |
 |---|---|---|---|
@@ -55,6 +55,17 @@
 | INF-051 | No permutation-equivariant distinguished-element selector exists on a bare finite set of cardinality at least two | EXACT GENERAL FINITE THEOREM | `validate_bmcf_final_boundary_v0_10.py` |
 | INF-052 | A supplied total order removes that selector obstruction via `min`; the missing ingredient is symmetry-breaking structure | EXACT CONSTRUCTION RELATIVE TO ORDER | `validate_bmcf_final_boundary_v0_10.py` |
 | INF-053 | One universal fourth mathematical operator has been established across the polynomial, rational, gated, fixed-point, quotient, and selection boundaries | NOT ESTABLISHED / NOT CLAIMED | typed AUX architecture remains an implementation/type discipline |
+| INF-054 | For `E(z)=exp(i*pi*z)`, `-1` is an exact fixed point; the fixed-point branch `EulerInfinity=-1` is named **Euler's Infinity** | DEFINITION + EXACT FIXED-POINT IDENTITY | `validate_eulers_infinity_v0_1.py` |
+| INF-055 | `E'(-1)=-i*pi` and `|E'(-1)|=pi>1`, so the Euler fixed point is repelling under ordinary forward iteration | EXACT / STANDARD COMPLEX-DYNAMICS CRITERION | `validate_eulers_infinity_v0_1.py` |
+| INF-056 | The algebraic square-root fibre of Euler's Infinity is `{+i,-i}` | EXACT | `validate_eulers_infinity_v0_1.py` |
+| INF-057 | Fixed points of `X=exp(i*pi*X)` satisfy `X_k=(i/pi) W_k(-i*pi)` branchwise | EXACT BRANCHWISE IDENTITY | analytic derivation in `research/EULERS_INFINITY_V0_1.md` |
+| INF-058 | On a declared logarithm branch, `E_k^{-1}(w)=2k-(i/pi)Log(w)`; finite inverse compositions form a countably branching preimage tree | EXACT ON DECLARED LOG BRANCH | `validate_eulers_infinity_v0_1.py` |
+| INF-059 | Every infinite integer branch address converges to a well-defined geometric limit | OPEN / NOT CLAIMED | requires branch/domain/convergence theorem |
+| INF-060 | The Euler preimage tree has a specific Hausdorff dimension or universal self-similar fractal law | OPEN / NOT CLAIMED | requires a precise dynamical/fractal invariant |
+
+## Euler's Infinity extension firewall
+
+Euler's Infinity is a post-v1.0 research extension. The exact fixed-point, derivative, square-root, Lambert-W, and inverse-branch identities do not imply convergence of arbitrary exponential towers. The notation for an infinite right-nested exponential is used only with an explicit fixed-point/branch interpretation. No specific fractal dimension, universal convergence law, or classical open-problem proof is promoted.
 
 ## v0.10 firewall
 
