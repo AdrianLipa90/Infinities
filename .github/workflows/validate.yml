@@ -54,6 +54,8 @@ jobs:
         run: python validation/validate_tir_lorentz_transported_e6_v0_1.py
       - name: Run C3-resolved N2 long-multiplet audit v0.1
         run: python validation/validate_tir_c3_resolved_n2_long_multiplets_v0_1.py
+      - name: Run C3 arm and McKay-index localization audit v0.1
+        run: python validation/validate_tir_c3_arm_decomposition_mckay_index_v0_1.py
       - name: Run TIR C3-untwisted N2 SL2C orbit audit v0.1
         run: python validation/validate_tir_c3_n2_lorentz_orbit_v0_1.py
       - name: Produce computation snapshot
