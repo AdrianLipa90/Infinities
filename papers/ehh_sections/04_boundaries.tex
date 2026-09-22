@@ -1,42 +1,102 @@
-\section{Relation of the two constructions}
-Theorem~\ref{thm:ehh} is a $0+1$ dimensional supersymmetric quantum-mechanical construction whose invariant is a Fredholm/Witten index. Theorem~\ref{thm:tetra-susy} is a $3+1$ dimensional supertranslation construction on a discrete null-generated momentum cone. They share a binary grading and a factorization of a positive object as a square or anticommutator, but no functorial identification between the two sectors is proved here.
+\section{What has actually been unified}
 
-\section{Nested tetrahedral sections and Euler's Infinity}
-One may consider nested tetrahedral sections
+The two main results are deliberately not collapsed into one theorem.
+
+The operator brick is
 \[
-\mathcal T_n=r_n\operatorname{conv}\{\mathbf n_1,\ldots,\mathbf n_4\},
-\qquad r_n\to0,
+\boxed{
+\text{boundary phase}
+\longrightarrow
+\text{winding}
+\longrightarrow
+\text{Toeplitz/Fredholm index}
+\longrightarrow
+\text{Witten index}.
+}
 \]
-around the fixed timelike axis $(1,0,0,0)$. This provides a mathematically clean carrier for an ``Euler Infinity'' programme. However, the scale law $r_n$ must be derived from a declared dynamics. No specific law, including $r_n=e^{-n}$, follows from Euler's identity alone.
+Its Hilbert-Hotel specialization is
+\[
+\boxed{
+z^k\longrightarrow S^k\longrightarrow\Delta_W=-k.}
+\]
+For finite Blaschke products the same integer is also the zero count in the disk.
 
-The exact supersymmetry theorems above do not require an infinite nest. A canonical inter-section evolution and its compatibility with the spinor/supercharge structures remain \textbf{OPEN / MODEL-LEVEL}.
+The tetrahedral brick is
+\[
+\boxed{
+\text{qubit SIC}
+\longleftrightarrow
+V_4
+\longleftarrow
+Q_8
+\subset
+2T
+\longrightarrow
+\text{spinorially covariant }\mathcal N=1\text{ supertranslation frame}.
+}
+\]
 
-\section{Proof firewall and conclusion}
-The exact results are:
-\begin{enumerate}[label=\textbf{E\arabic*.}]
-\item the unilateral-shift $\mathcal N=2$ algebra;
-\item $\Delta_W(H_k)=\indop(S^k)=-k$ with the declared grading convention;
-\item the regular-tetrahedron isotropy and causal-cone identity of Theorem~\ref{thm:cone};
-\item rank-one spinor factorization of the four null generators;
-\item the $\mathcal N=1$ supertranslation algebra after explicit CAR modes are supplied.
+These are separate constructions sharing Pauli/spinorial language. No additional identification is required for either theorem to stand.
+
+\section{Novelty firewall}
+
+The paper distinguishes the following layers.
+
+\begin{center}
+\begin{tabular}{p{0.28\textwidth}p{0.60\textwidth}}
+\toprule
+\textbf{Layer} & \textbf{Status}\\
+\midrule
+Fredholm--SUSY factorization & Standard theorem / exact construction.\\
+Toeplitz index $=-$ winding & Classical theorem; modern Witten-index extensions also exist.\\
+Finite-Blaschke model-space count & Standard Hardy/model-space theory.\\
+Qubit tetrahedron as SIC & Standard quantum-information geometry.\\
+$Q_8\subset2T$ and projective $A_4$ & Standard binary-polyhedral group theory.\\
+Tetrahedral CAR supertranslation realization & Exact algebraic construction with explicit CAR input.\\
+Combined theorem packaging and crosswalk & Present synthesis; component novelty not claimed.\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Falsification boundaries}
+
+The following statements are \emph{not} consequences of the present mathematics.
+
+\begin{enumerate}[label=\textbf{F\arabic*.}]
+\item A bare pointed complex plane does not determine a unique Fredholm operator or supercharge.
+\item Tetrahedral geometry alone does not derive fermionic CAR modes.
+\item The existence of the mathematical supersymmetry algebras does not establish that a corresponding supersymmetry is realized by Nature.
+\item The two supersymmetry bricks need not arise from a single physical model.
 \end{enumerate}
 
-Not established are: physical supersymmetry of Nature; a theory of everything; derivation of the CAR modes from tetrahedral geometry alone; a unique supercharge from a bare pointed complex plane; a canonical scale law for the infinite tetrahedral nest; or any consequence for RH, Collatz, Twin Prime, or another open problem.
+The useful content is therefore structural and testable: each brick comes with explicit hypotheses, exact algebra, a topological or group-theoretic invariant, and a clear boundary at which the theorem stops.
 
-The compact operator result is
+\section{Conclusion}
+
+The strongest compact identity of the operator sector is
 \[
 \boxed{
-\text{unilateral shift}+\mathbb Z_2\text{ grading}
-\Longrightarrow \mathcal N=2\text{ SUSY},
-\qquad
-\Delta_W=\indop(S^k)=-k.}
+\Delta_W(T_f)
+=
+\indop(T_f)
+=
+-\operatorname{wind}(f).
+}
 \]
-The Hilbert-Hotel defect is therefore literally a supersymmetric index in the declared operator model.
-
-Independently, the tetrahedral spinor/CAR construction gives
+It immediately contains the Hilbert Hotel,
+\[
+\Delta_W(S^k)=-k,
+\]
+and for a finite Blaschke product,
 \[
 \boxed{
-\{Q_\alpha,\bar Q_{\dot\beta}\}
-=2\sigma^\mu_{\alpha\dot\beta}P_\mu}
+\#Z_{\mathbb D}(B)
+=
+-\Delta_W(T_B).
+}
 \]
-on the tetrahedral momentum cone. This upgrades the tetrahedral spinorial picture from analogy to an exact algebraic supersymmetry realization while preserving the crucial boundary that the fermionic degrees of freedom are supplied rather than derived.
+Hence Euler phase winding, Fredholm defect, Hilbert-Hotel deficiency, analytic zero multiplicity, and protected supersymmetric zero-mode imbalance are different realizations of one integer within the stated Hardy/Toeplitz model.
+
+Independently, the tetrahedral sector is no longer an arbitrary four-ray choice: it is the minimal qubit SIC, exactly the projective Pauli orbit, with $Q_8$ as its spinorial core and $2T$ as its full orientation-preserving binary symmetry. Once the CAR sector is supplied, the resulting $\mathcal N=1$ supertranslation frame is equivariant under that symmetry.
+
+The programme is therefore best developed as modular supersymmetry: prove each component at full strength, then compose only when an additional bridge is itself proved.
