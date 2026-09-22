@@ -31,7 +31,6 @@ from validate_tir_naimark_mckay_e6_v0_1 import (
     vdot,
     zeros,
 )
-from validate_tir_sic_naimark_car_susy_v0_1 import creation
 from validate_tir_c3_untwisted_naimark_n2_rest_v0_1 import (
     conjugate_matrix,
     gram_schmidt_complement,
@@ -78,6 +77,20 @@ def exterior_rep4(u):
             else:
                 minor = [[u[i][j] for j in s] for i in t]
                 out[it][js] = det_small(minor)
+    return out
+
+def creation_subset(v):
+    """Exterior creation matrix in the same degree-ordered subset basis as exterior_rep4."""
+    out = zeros(16, 16)
+    for s in SUBSETS:
+        js = SUB_INDEX[s]
+        occupied = set(s)
+        for i, coeff in enumerate(v):
+            if i in occupied:
+                continue
+            sign = -1 if sum(1 for j in s if j < i) % 2 else 1
+            t = tuple(sorted((i,) + s))
+            out[SUB_INDEX[t]][js] += sign * coeff
     return out
 
 
@@ -140,7 +153,7 @@ def main():
     a_iso = conjugate_matrix(v)
     b_iso = gram_schmidt_complement(a_iso)
 
-    creators = [creation(a) for a in range(4)]
+    creators = [creation_subset([1 + 0j if i == a else 0j for i in range(4)]) for a in range(4)]
     a_create = [linear_creation(column(a_iso, alpha), creators) for alpha in range(2)]
     b_create = [linear_creation(column(b_iso, alpha), creators) for alpha in range(2)]
 
