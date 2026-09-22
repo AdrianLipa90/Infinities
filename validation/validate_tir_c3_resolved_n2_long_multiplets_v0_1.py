@@ -44,10 +44,8 @@ from validate_tir_c3_untwisted_naimark_n2_rest_v0_1 import (
     linear_creation,
 )
 from validate_tir_c3_e6_graph_dynamics_v0_1 import (
+    creation_subset,
     exterior_rep4,
-)
-from validate_tir_sic_naimark_car_susy_v0_1 import (
-    creation,
 )
 
 TOL = 8.0e-8
@@ -202,7 +200,10 @@ def main():
     assert_close(mpow(ztotal, 3), eye(48), 5e-7)
 
     # Build the two compensated supercharge creation doublets.
-    creators = [creation(a) for a in range(4)]
+    creators = [
+        creation_subset([1 + 0j if i == a else 0j for i in range(4)])
+        for a in range(4)
+    ]
     a_create = [
         linear_creation(column(a_iso, alpha), creators)
         for alpha in range(2)
