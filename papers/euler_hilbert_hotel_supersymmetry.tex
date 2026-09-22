@@ -1,0 +1,39 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,microtype,geometry}
+\geometry{margin=27mm}
+\usepackage{amsmath,amssymb,mathtools,amsthm,mathrsfs,booktabs,enumitem,xcolor,hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue!55!black,citecolor=blue!55!black,urlcolor=blue!55!black}
+\setlist{nosep}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\Hil}{\mathcal H}
+\newcommand{\BigHil}{\mathscr H}
+\newcommand{\C}{\mathbb C}
+\newcommand{\N}{\mathbb N}
+\newcommand{\indop}{\operatorname{ind}}
+\newcommand{\Span}{\operatorname{span}}
+\newcommand{\diagop}{\operatorname{diag}}
+\title{\textbf{Euler--Hilbert-Hotel Supersymmetry}\\\large Fredholm defects, spinorial grading, and a tetrahedral supertranslation cone}
+\author{Adrian Lipa}
+\date{22 September 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We give two exact operator constructions. The unilateral shift on $\ell^2(\N)$, combined with a spinorial $\mathbb Z_2$ grading, closes to standard $\mathcal N=2$ supersymmetric quantum mechanics; for the $k$-step shift its Witten index equals the Fredholm index, $\Delta_W=\indop(S^k)=-k$. Separately, four regular-tetrahedron null directions generate a simplicial causal cone. Their rank-one two-spinor lifts, after one fermionic CAR mode is attached to each ray, close to the $3+1$ dimensional $\mathcal N=1$ supertranslation algebra. The results are exact in the stated models; physical supersymmetry, a theory of everything, and any implication for open number-theory problems remain open.
+\end{abstract}
+\input{ehh_sections/01_scope}
+\input{ehh_sections/02_shift_susy}
+\input{ehh_sections/03_tetrahedral}
+\input{ehh_sections/04_boundaries}
+\begin{thebibliography}{9}
+\bibitem{Witten1981} E. Witten, ``Dynamical Breaking of Supersymmetry,'' \emph{Nuclear Physics B} \textbf{188} (1981), 513--554.
+\bibitem{Cooper1995} F. Cooper, A. Khare, and U. Sukhatme, ``Supersymmetry and quantum mechanics,'' \emph{Physics Reports} \textbf{251} (1995), 267--385.
+\bibitem{PenroseRindler} R. Penrose and W. Rindler, \emph{Spinors and Space-Time, Vol. 1}, Cambridge University Press, 1984.
+\bibitem{LipaInfinities} A. Lipa, \emph{Infinities}, research repository, 2026. \url{https://github.com/AdrianLipa90/Infinities}
+\bibitem{LipaSOH} A. Lipa, ``SOH-G013 -- Pauli / SU(2) Spinor Lift of the Projective Operator Algebra,'' \emph{Secret-of-a-Half}, 2026. \url{https://github.com/AdrianLipa90/secret-of-a-half/blob/main/research/SOH_G013_PAULI_SPINOR_LIFT_V0_1.md}
+\end{thebibliography}
+\end{document}
