@@ -177,19 +177,34 @@ The freeze deliberately does **not** establish a universal minimal operator gram
 
 ## Post-freeze additive research: Euler-Hilbert-Hotel supersymmetry
 
-The supersymmetry programme is now split into independently checkable theorem modules.
+The programme is now at v0.3 and is split into independent theorem modules.
 
-The v0.2 note `research/EULER_HILBERT_HOTEL_SUPERSYMMETRY_V0_2.md` promotes the operator result to the general Fredholm/Toeplitz form
+The operator module is summarized in `research/EULER_HILBERT_HOTEL_SUPERSYMMETRY_V0_3.md`. Its central classification is
 
 [
-Delta_W(T_f)=-operatorname{wind}(f),
+pi_0(mathrm{Fred}(H))
+cong
+mathbb Z,
+qquad
+[A]mapsto
+Delta_W(A)=operatorname{ind}(A),
 ]
 
-with Hilbert Hotel as the monomial specialization `T_{z^k}=S^k`, and with the finite-Blaschke corollary identifying analytic zero multiplicity with protected supersymmetric zero-mode multiplicity.
+with explicit Hilbert-Hotel normal representatives built from the unilateral shift and its adjoint.
 
-The tetrahedral module is sharpened independently: the four projectors are the qubit SIC and exactly the projective Pauli V4 orbit of one fiducial state; the Q8 spin lift extends to the binary tetrahedral group 2T, and the CAR-based N=1 supertranslation construction is equivariant under that action.
+For scalar Toeplitz symbols,
 
-The LaTeX paper is `papers/euler_hilbert_hotel_supersymmetry.tex`. Scoped claims are in `CLAIMS_V1_2.md` and `CLAIMS_V1_3.md`.
+[
+Delta_W(T_f)
+=
+-operatorname{wind}(f),
+]
+
+and the Toeplitz extension identifies this integer as the K-theory boundary image of the Euler boundary-phase class. Finite Blaschke products give an explicit protected zero-mode space `K_B=H^2 minus B H^2`, not merely an index count; normalized zero modes inherit the pseudohyperbolic geometry of their analytic zero locations.
+
+The tetrahedral module remains independent. Its equal-weight N=1 supertranslation frame has an exact timelike rest axis fixed by the tetrahedral rotational symmetry, with the binary tetrahedral group acting through the spin lift after explicit CAR input.
+
+The LaTeX paper is `papers/euler_hilbert_hotel_supersymmetry.tex`. Scoped claims are in `CLAIMS_V1_2.md` through `CLAIMS_V1_4.md`.
 
 ## Status
 
