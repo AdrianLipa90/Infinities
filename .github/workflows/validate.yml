@@ -40,6 +40,8 @@ jobs:
         run: python validation/validate_euler_hilbert_susy_v0_2.py
       - name: Run stable SUSY classification controls v0.3
         run: python validation/validate_euler_hilbert_susy_v0_3.py
+      - name: Run SIC-Naimark-McKay SUSY controls v0.5
+        run: python validation/validate_euler_hilbert_susy_v0_5.py
       - name: Run TIR SIC-Naimark-CAR supersymmetry controls v0.1
         run: python validation/validate_tir_sic_naimark_car_susy_v0_1.py
       - name: Run TIR Naimark-Fock McKay E6 representation audit v0.1
