@@ -1,0 +1,85 @@
+\section{Tetrahedral null-generated causal cone}
+Define
+\[
+\mathbf n_1=\frac{(1,1,1)}{\sqrt3},\quad
+\mathbf n_2=\frac{(1,-1,-1)}{\sqrt3},\quad
+\mathbf n_3=\frac{(-1,1,-1)}{\sqrt3},\quad
+\mathbf n_4=\frac{(-1,-1,1)}{\sqrt3}.
+\]
+Then
+\[
+\sum_a\mathbf n_a=0,
+\qquad
+\mathbf n_a\cdot\mathbf n_b=-\frac13\ (a\ne b),
+\qquad
+\frac14\sum_a\mathbf n_a\mathbf n_a^T=\frac13I_3.
+\]
+With Minkowski metric $\eta=\diagop(+,-,-,-)$ define $k_a=(1,\mathbf n_a)$. Each $k_a$ is future null, and
+\[
+\frac14\sum_a k_a=(1,0,0,0).
+\]
+
+For $p_a\ge0$, set $P=\sum_ap_ak_a$.
+\begin{theorem}[Exact tetrahedral causal norm]\label{thm:cone}
+\[
+\boxed{P^2=\frac83\sum_{a<b}p_ap_b\ge0.}
+\]
+Thus the positive span of the four null rays is contained in the future Lorentz cone, and $P$ is null exactly when at most one $p_a$ is nonzero.
+\end{theorem}
+\begin{proof}
+$k_a^2=0$, while for $a\ne b$,
+\[
+k_a\cdot k_b=1-\mathbf n_a\cdot\mathbf n_b=\frac43.
+\]
+Expanding $P^2$ gives the formula.
+\end{proof}
+At fixed $P^0=1$ the section is the regular tetrahedron inside the unit ball. Its four vertices are null directions; nontrivial convex mixtures are timelike. It is therefore a null-generated tetrahedral causal cone, not a replacement for the full null boundary.
+
+\section{Spinorial and supersymmetric lift}
+Let $\sigma^\mu=(I_2,\sigma_x,\sigma_y,\sigma_z)$ and
+\[
+K_a=I_2+\mathbf n_a\cdot\boldsymbol\sigma.
+\]
+Since $|\mathbf n_a|=1$, $K_a$ is positive semidefinite, rank one, and $\det K_a=0$. Hence there is a two-spinor $\lambda_a\in\C^2$ such that
+\[
+\boxed{K_a=\lambda_a\lambda_a^\dagger}.
+\]
+The factorization has the full phase gauge $\lambda_a\sim e^{i\chi_a}\lambda_a$; the sign $\lambda_a\mapsto-\lambda_a$ is the Euler half-turn element, not the entire gauge freedom.
+
+The geometry supplies the null spinors but not fermionic operators. Attach four modes $f_a,f_a^\dagger$ satisfying
+\[
+\{f_a,f_b^\dagger\}=\delta_{ab},
+\qquad
+\{f_a,f_b\}=\{f_a^\dagger,f_b^\dagger\}=0.
+\]
+For $p_a\ge0$ define
+\[
+P_{\alpha\dot\beta}=\sum_a p_a\lambda_{a\alpha}\bar\lambda_{a\dot\beta},
+\]
+\[
+Q_\alpha=\sqrt2\sum_a\sqrt{p_a}\lambda_{a\alpha}f_a^\dagger,
+\qquad
+\bar Q_{\dot\beta}=\sqrt2\sum_a\sqrt{p_a}\bar\lambda_{a\dot\beta}f_a.
+\]
+
+\begin{theorem}[Tetrahedral $\mathcal N=1$ supertranslation algebra]\label{thm:tetra-susy}
+\[
+\boxed{\{Q_\alpha,\bar Q_{\dot\beta}\}=2P_{\alpha\dot\beta}},
+\qquad
+\{Q_\alpha,Q_\beta\}=0,
+\qquad
+\{\bar Q_{\dot\alpha},\bar Q_{\dot\beta}\}=0.
+\]
+Thus the tetrahedral momentum cone admits an exact $3+1$ dimensional $\mathcal N=1$ supertranslation realization once one CAR mode is supplied for each null ray.
+\end{theorem}
+\begin{proof}
+Using the CAR,
+\[
+\{Q_\alpha,\bar Q_{\dot\beta}\}
+=2\sum_{a,b}\sqrt{p_ap_b}\lambda_{a\alpha}\bar\lambda_{b\dot\beta}\{f_a^\dagger,f_b\}
+=2\sum_ap_a\lambda_{a\alpha}\bar\lambda_{a\dot\beta}.
+\]
+The same-chirality anticommutators vanish because the creation operators mutually anticommute, as do the annihilation operators.
+\end{proof}
+
+Theorem~\ref{thm:tetra-susy} proves that the tetrahedral spinorial carrier admits a natural supersymmetric lift after CAR input. It does not prove that geometry alone derives physical fermions.
