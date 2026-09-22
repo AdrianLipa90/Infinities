@@ -64,6 +64,8 @@ jobs:
         run: python validation/validate_tir_c6_supergrading_crosswalk_v0_1.py
       - name: Run affine-critical C6 selection audit v0.1
         run: python validation/validate_tir_affine_critical_c6_selection_v0_1.py
+      - name: Run exceptional McKay balance and C6 selector audit v0.1
+        run: python validation/validate_tir_exceptional_mckay_balance_c6_selector_v0_1.py
       - name: Produce computation snapshot
         run: python computations/run_v0_1.py > computation_snapshot.json
       - name: Produce BMF OOD snapshot
