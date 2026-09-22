@@ -48,8 +48,10 @@ The paper distinguishes the following layers.
 \textbf{Layer} & \textbf{Status}\\
 \midrule
 Fredholm--SUSY factorization & Standard theorem / exact construction.\\
+Atiyah--J\"anich $\pi_0(\mathrm{Fred})\cong\mathbb Z$ & Standard homotopy/K-theory classification.\\
 Toeplitz index $=-$ winding & Classical theorem; modern Witten-index extensions also exist.\\
-Finite-Blaschke model-space count & Standard Hardy/model-space theory.\\
+Toeplitz extension $K_1\to K_0$ & Standard $C^*$-algebra/K-theory index mechanism.\\
+Finite-Blaschke model-space count and kernel modes & Standard Hardy/model-space theory; exact SUSY realization here.\\
 Qubit tetrahedron as SIC & Standard quantum-information geometry.\\
 $Q_8\subset2T$ and projective $A_4$ & Standard binary-polyhedral group theory.\\
 Tetrahedral CAR supertranslation realization & Exact algebraic construction with explicit CAR input.\\
@@ -73,7 +75,19 @@ The useful content is therefore structural and testable: each brick comes with e
 
 \section{Conclusion}
 
-The strongest compact identity of the operator sector is
+The operator sector is now a complete stable classification statement. For bounded Fredholm supercharges,
+\[
+\boxed{
+\pi_0(\operatorname{Fred}(\Hil))
+\cong
+\mathbb Z,
+\qquad
+[A]\longmapsto\Delta_W(A)=\indop(A).
+}
+\]
+Every connected component has an explicit Hilbert-Hotel normal representative built from $S$ or $S^\dagger$.
+
+For scalar Toeplitz symbols the charge is computed directly from the Euler boundary phase:
 \[
 \boxed{
 \Delta_W(T_f)
@@ -83,20 +97,43 @@ The strongest compact identity of the operator sector is
 -\operatorname{wind}(f).
 }
 \]
-It immediately contains the Hilbert Hotel,
+The Toeplitz extension packages this as the boundary map
 \[
-\Delta_W(S^k)=-k,
+\boxed{
+K_1(C(S^1))
+\xrightarrow{\ \partial\ }
+K_0(\mathcal K)
+\cong\mathbb Z,
+\qquad
+\partial[u_f]=\Delta_W(T_f).
+}
 \]
-and for a finite Blaschke product,
+So the phase charge and the protected zero-mode imbalance are not merely equal integers: they are the input and output of the standard index boundary map.
+
+For a finite Blaschke product the identification becomes fully concrete:
 \[
 \boxed{
 \#Z_{\mathbb D}(B)
 =
--\Delta_W(T_B).
+-\Delta_W(T_B)
+=
+\dim K_B,
 }
 \]
-Hence Euler phase winding, Fredholm defect, Hilbert-Hotel deficiency, analytic zero multiplicity, and protected supersymmetric zero-mode imbalance are different realizations of one integer within the stated Hardy/Toeplitz model.
+and $K_B$ is literally the kernel of the negative-sector SUSY Hamiltonian. The normalized kernel-mode overlaps obey
+\[
+|\langle\kappa_a,\kappa_b\rangle|^2
+=
+1-\rho(a,b)^2,
+\]
+so the protected zero-mode Hilbert space retains the pseudohyperbolic geometry of the analytic zero positions in addition to their topological count.
 
-Independently, the tetrahedral sector is no longer an arbitrary four-ray choice: it is the minimal qubit SIC, exactly the projective Pauli orbit, with $Q_8$ as its spinorial core and $2T$ as its full orientation-preserving binary symmetry. Once the CAR sector is supplied, the resulting $\mathcal N=1$ supertranslation frame is equivariant under that symmetry.
+Independently, the tetrahedral sector is the minimal qubit SIC and projective Pauli orbit, with $Q_8$ as the quaternionic core and $2T$ as the full orientation-preserving spin lift. Equal weights give
+\[
+P^\mu=(4p,0,0,0),
+\qquad
+P^2=16p^2,
+\]
+an exact tetrahedral rest frame preserved by the combined binary-tetrahedral spin/CAR action.
 
-The programme is therefore best developed as modular supersymmetry: prove each component at full strength, then compose only when an additional bridge is itself proved.
+The result is therefore modular supersymmetry in a strict sense: one brick is a complete $\mathbb Z$-classified Fredholm/index theory with explicit zero modes, while the other is a finite spinorial covariance theorem. Each stands independently; bridges may be added only when separately proved.
