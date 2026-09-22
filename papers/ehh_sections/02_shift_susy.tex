@@ -1,0 +1,75 @@
+\section{Hilbert-Hotel shift and $\mathcal N=2$ supersymmetry}
+Let $\Hil=\ell^2(\N)$ with orthonormal basis $e_1,e_2,\ldots$ and unilateral shift
+\[
+Se_n=e_{n+1}.
+\]
+Its adjoint obeys $S^\dagger e_1=0$ and $S^\dagger e_{n+1}=e_n$, hence
+\begin{equation}\label{eq:shift}
+S^\dagger S=I,\qquad SS^\dagger=I-P_1,\qquad P_1=|e_1\rangle\langle e_1|.
+\end{equation}
+This is the operator form of the Hilbert-Hotel self-embedding: the basis is isometrically mapped into the proper subset $\{e_2,e_3,\ldots\}$ with a rank-one defect.
+
+\begin{proposition}
+$S$ is Fredholm with $\indop(S)=-1$, and more generally $\indop(S^k)=-k$.
+\end{proposition}
+\begin{proof}
+$S^\dagger S=I$ gives $\ker S=0$. The kernel of $S^\dagger$ is $\Span\{e_1\}$. For $S^k$, the cokernel is $\Span\{e_1,\ldots,e_k\}$.
+\end{proof}
+
+On $\BigHil=\Hil\oplus\Hil$ set
+\[
+\Gamma=\begin{pmatrix}I&0\\0&-I\end{pmatrix},\quad
+\mathcal Q=\begin{pmatrix}0&0\\S&0\end{pmatrix},\quad
+\mathcal Q^\dagger=\begin{pmatrix}0&S^\dagger\\0&0\end{pmatrix}.
+\]
+
+\begin{theorem}[Euler--Hilbert-Hotel supersymmetry]\label{thm:ehh}
+The operators satisfy
+\[
+\mathcal Q^2=(\mathcal Q^\dagger)^2=0,
+\qquad
+\{\Gamma,\mathcal Q\}=\{\Gamma,\mathcal Q^\dagger\}=0,
+\]
+and
+\[
+H=\{\mathcal Q,\mathcal Q^\dagger\}
+=\begin{pmatrix}I&0\\0&I-P_1\end{pmatrix}\ge0.
+\]
+For
+\[
+Q_1=\mathcal Q+\mathcal Q^\dagger,
+\qquad
+Q_2=i(\mathcal Q^\dagger-\mathcal Q),
+\]
+we have
+\[
+\boxed{\{Q_i,Q_j\}=2\delta_{ij}H},\qquad [H,Q_i]=0,\qquad \{\Gamma,Q_i\}=0.
+\]
+Thus the declared system is standard $\mathcal N=2$ supersymmetric quantum mechanics.
+\end{theorem}
+\begin{proof}
+Nilpotence follows from the off-diagonal form. Direct multiplication gives $\mathcal Q^\dagger\mathcal Q=\diagop(S^\dagger S,0)$ and $\mathcal Q\mathcal Q^\dagger=\diagop(0,SS^\dagger)$. Equation~\eqref{eq:shift} then gives $H$. Expanding $Q_1,Q_2$ proves the remaining relations.
+\end{proof}
+
+\begin{corollary}[Witten/Fredholm index]
+The positive sector has no zero mode and the negative sector has the protected zero mode $e_1$. With the displayed grading convention,
+\[
+\boxed{\Delta_W=-1=\indop(S)}.
+\]
+For the $k$-step shift,
+\[
+S^{\dagger k}S^k=I,\qquad S^kS^{\dagger k}=I-P_k,
+\]
+where $P_k$ projects onto $\Span\{e_1,\ldots,e_k\}$. Therefore
+\[
+\boxed{\Delta_W(H_k)=-k=\indop(S^k)},
+\]
+and exactly $k$ zero modes are protected in the negative grading sector.
+\end{corollary}
+
+\subsection{Zero-centred analytic carrier}
+On Hardy space $H^2(\mathbb D)$, multiplication by $z$ is exactly the unilateral shift on the basis $1,z,z^2,\ldots$. The distinguished zero $z=0$ determines the codimension-one subspace
+\[
+zH^2(\mathbb D)=\{f\in H^2(\mathbb D):f(0)=0\}.
+\]
+Hence a zero-centred complex analytic domain supports the theorem once the Hilbert carrier is specified. The point $0$ alone does not force a unique supercharge.
