@@ -66,6 +66,8 @@ jobs:
         run: python validation/validate_tir_affine_critical_c6_selection_v0_1.py
       - name: Run exceptional McKay balance and C6 selector audit v0.1
         run: python validation/validate_tir_exceptional_mckay_balance_c6_selector_v0_1.py
+      - name: Run affine-E6 Fourier Hilbert-Hotel core audit v0.1
+        run: python validation/validate_tir_e6_fourier_hilbert_hotel_core_v0_1.py
       - name: Produce computation snapshot
         run: python computations/run_v0_1.py > computation_snapshot.json
       - name: Produce BMF OOD snapshot
