@@ -175,6 +175,18 @@ The first finite operator programme is frozen at `v1.0.0`. Its strongest scoped 
 
 The freeze deliberately does **not** establish a universal minimal operator grammar or a single universal fourth mathematical operator.
 
+## Post-freeze additive research: Euler-Hilbert-Hotel supersymmetry
+
+The additive v1.2 research note `research/EULER_HILBERT_HOTEL_SUPERSYMMETRY_V0_1.md` connects the existing unilateral-shift defect to a standard N=2 supersymmetric quantum-mechanical factorization:
+
+[
+Delta_W(H_k)=operatorname{ind}(S^k)=-k.
+]
+
+It also records an exact tetrahedral null-generated causal-cone identity and an N=1 supertranslation realization after explicit fermionic CAR modes are supplied. The companion article source is `papers/euler_hilbert_hotel_supersymmetry.tex`, with scoped claims in `CLAIMS_V1_2.md`.
+
+These are exact operator/algebra constructions in their declared models. They are not promoted to physical supersymmetry, a theory of everything, or a proof of any open number-theory problem.
+
 ## Status
 
 **v1.0.0 — finite research-programme freeze.** The first programme is closed as an auditable collection of scoped theorems, counterexamples, finite classifications, typed boundaries, and explicit open questions. `v1.0 COMPLETE` refers to that repository scope only; it does not mean that all mathematical infinities or the open problems named above are solved.
