@@ -34,8 +34,10 @@ jobs:
         run: python validation/validate_v1_0_freeze.py
       - name: Run BMF v1.1 absolute-fold controls
         run: python validation/validate_bmf_infinite_fold_v1_1.py
-      - name: Run Euler-Hilbert-Hotel supersymmetry controls
+      - name: Run Euler-Hilbert-Hotel supersymmetry controls v0.1
         run: python validation/validate_euler_hilbert_susy_v0_1.py
+      - name: Run Euler-Toeplitz-Hilbert-Hotel supersymmetry controls v0.2
+        run: python validation/validate_euler_hilbert_susy_v0_2.py
       - name: Produce computation snapshot
         run: python computations/run_v0_1.py > computation_snapshot.json
       - name: Produce BMF OOD snapshot
