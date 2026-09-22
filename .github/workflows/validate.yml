@@ -44,6 +44,8 @@ jobs:
         run: python validation/validate_tir_sic_naimark_car_susy_v0_1.py
       - name: Run TIR Naimark-Fock McKay E6 representation audit v0.1
         run: python validation/validate_tir_naimark_mckay_e6_v0_1.py
+      - name: Run TIR C3-untwisted Naimark complement doubled rest-frame audit v0.1
+        run: python validation/validate_tir_c3_untwisted_naimark_n2_rest_v0_1.py
       - name: Produce computation snapshot
         run: python computations/run_v0_1.py > computation_snapshot.json
       - name: Produce BMF OOD snapshot
