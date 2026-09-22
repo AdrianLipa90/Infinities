@@ -16,7 +16,7 @@ from __future__ import annotations
 
 import math
 
-from validation.validate_tir_naimark_mckay_e6_v0_1 import (
+from validate_tir_naimark_mckay_e6_v0_1 import (
     TOL,
     analysis_map,
     cinner,
@@ -37,7 +37,7 @@ from validation.validate_tir_naimark_mckay_e6_v0_1 import (
     vdot,
     zeros,
 )
-from validation.validate_tir_sic_naimark_car_susy_v0_1 import (
+from validate_tir_sic_naimark_car_susy_v0_1 import (
     anticommutator,
     creation,
 )
