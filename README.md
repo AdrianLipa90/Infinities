@@ -179,9 +179,7 @@ The freeze deliberately does **not** establish a universal minimal operator gram
 
 The additive v1.2 research note `research/EULER_HILBERT_HOTEL_SUPERSYMMETRY_V0_1.md` connects the existing unilateral-shift defect to a standard N=2 supersymmetric quantum-mechanical factorization:
 
-[
-Delta_W(H_k)=operatorname{ind}(S^k)=-k.
-]
+`Delta_W(H_k) = ind(S^k) = -k`.
 
 It also records an exact tetrahedral null-generated causal-cone identity and an N=1 supertranslation realization after explicit fermionic CAR modes are supplied. The companion article source is `papers/euler_hilbert_hotel_supersymmetry.tex`, with scoped claims in `CLAIMS_V1_2.md`.
 
