@@ -1,75 +1,236 @@
-\section{Hilbert-Hotel shift and $\mathcal N=2$ supersymmetry}
-Let $\Hil=\ell^2(\N)$ with orthonormal basis $e_1,e_2,\ldots$ and unilateral shift
+\section{Fredholm factorization and $\mathcal N=2$ supersymmetry}
+
+Let $A:\Hil_+\to\Hil_-$ be a bounded Fredholm operator. On
 \[
-Se_n=e_{n+1}.
+\BigHil=\Hil_+\oplus\Hil_-
 \]
-Its adjoint obeys $S^\dagger e_1=0$ and $S^\dagger e_{n+1}=e_n$, hence
-\begin{equation}\label{eq:shift}
-S^\dagger S=I,\qquad SS^\dagger=I-P_1,\qquad P_1=|e_1\rangle\langle e_1|.
-\end{equation}
-This is the operator form of the Hilbert-Hotel self-embedding: the basis is isometrically mapped into the proper subset $\{e_2,e_3,\ldots\}$ with a rank-one defect.
-
-\begin{proposition}
-$S$ is Fredholm with $\indop(S)=-1$, and more generally $\indop(S^k)=-k$.
-\end{proposition}
-\begin{proof}
-$S^\dagger S=I$ gives $\ker S=0$. The kernel of $S^\dagger$ is $\Span\{e_1\}$. For $S^k$, the cokernel is $\Span\{e_1,\ldots,e_k\}$.
-\end{proof}
-
-On $\BigHil=\Hil\oplus\Hil$ set
+define
 \[
-\Gamma=\begin{pmatrix}I&0\\0&-I\end{pmatrix},\quad
-\mathcal Q=\begin{pmatrix}0&0\\S&0\end{pmatrix},\quad
-\mathcal Q^\dagger=\begin{pmatrix}0&S^\dagger\\0&0\end{pmatrix}.
+\Gamma=
+\begin{pmatrix}
+I&0\\
+0&-I
+\end{pmatrix},
+\qquad
+\mathcal Q_A=
+\begin{pmatrix}
+0&0\\
+A&0
+\end{pmatrix},
+\qquad
+\mathcal Q_A^\dagger=
+\begin{pmatrix}
+0&A^\dagger\\
+0&0
+\end{pmatrix}.
 \]
 
-\begin{theorem}[Euler--Hilbert-Hotel supersymmetry]\label{thm:ehh}
+\begin{theorem}[Fredholm--SUSY factorization]\label{thm:fredholm-susy}
 The operators satisfy
 \[
-\mathcal Q^2=(\mathcal Q^\dagger)^2=0,
+\mathcal Q_A^2=(\mathcal Q_A^\dagger)^2=0,
 \qquad
-\{\Gamma,\mathcal Q\}=\{\Gamma,\mathcal Q^\dagger\}=0,
+\{\Gamma,\mathcal Q_A\}
+=
+\{\Gamma,\mathcal Q_A^\dagger\}
+=0,
 \]
 and
 \[
-H=\{\mathcal Q,\mathcal Q^\dagger\}
-=\begin{pmatrix}I&0\\0&I-P_1\end{pmatrix}\ge0.
+H_A
+=
+\{\mathcal Q_A,\mathcal Q_A^\dagger\}
+=
+\begin{pmatrix}
+A^\dagger A&0\\
+0&AA^\dagger
+\end{pmatrix}
+\ge0.
 \]
 For
 \[
-Q_1=\mathcal Q+\mathcal Q^\dagger,
+Q_1=\mathcal Q_A+\mathcal Q_A^\dagger,
 \qquad
-Q_2=i(\mathcal Q^\dagger-\mathcal Q),
+Q_2=i(\mathcal Q_A^\dagger-\mathcal Q_A),
 \]
-we have
+one has
 \[
-\boxed{\{Q_i,Q_j\}=2\delta_{ij}H},\qquad [H,Q_i]=0,\qquad \{\Gamma,Q_i\}=0.
+\boxed{\{Q_i,Q_j\}=2\delta_{ij}H_A},
+\qquad
+[H_A,Q_i]=0,
+\qquad
+\{\Gamma,Q_i\}=0.
 \]
-Thus the declared system is standard $\mathcal N=2$ supersymmetric quantum mechanics.
+Moreover
+\[
+\ker H_+=\ker A,
+\qquad
+\ker H_-=\ker A^\dagger,
+\]
+and therefore
+\[
+\boxed{
+\Delta_W
+=
+\dim\ker A-\dim\ker A^\dagger
+=
+\indop(A).
+}
+\]
 \end{theorem}
+
 \begin{proof}
-Nilpotence follows from the off-diagonal form. Direct multiplication gives $\mathcal Q^\dagger\mathcal Q=\diagop(S^\dagger S,0)$ and $\mathcal Q\mathcal Q^\dagger=\diagop(0,SS^\dagger)$. Equation~\eqref{eq:shift} then gives $H$. Expanding $Q_1,Q_2$ proves the remaining relations.
+All algebraic relations follow by block multiplication. The kernels of $A^\dagger A$ and $A$ coincide, as do the kernels of $AA^\dagger$ and $A^\dagger$. Since $A$ is Fredholm these spaces are finite-dimensional, giving the index identity.
 \end{proof}
 
-\begin{corollary}[Witten/Fredholm index]
-The positive sector has no zero mode and the negative sector has the protected zero mode $e_1$. With the displayed grading convention,
+Every positive eigenvalue is paired between the two grading sectors by $A$ and $A^\dagger$; only zero modes can remain unpaired. The integer index therefore measures the protected supersymmetric imbalance.
+
+\section{Euler--Toeplitz--Hilbert-Hotel index theorem}
+
+Let $H^2(\mathbb D)$ be Hardy space and let $T_f$ denote the Toeplitz operator with continuous symbol
 \[
-\boxed{\Delta_W=-1=\indop(S)}.
+f:S^1\to\mathbb C\setminus\{0\}.
 \]
-For the $k$-step shift,
+The classical Toeplitz index theorem gives
 \[
-S^{\dagger k}S^k=I,\qquad S^kS^{\dagger k}=I-P_k,
+\indop(T_f)=-\operatorname{wind}(f,0).
 \]
-where $P_k$ projects onto $\Span\{e_1,\ldots,e_k\}$. Therefore
+
+\begin{theorem}[Euler--Toeplitz--Hilbert-Hotel SUSY index]\label{thm:toeplitz-susy}
+The Fredholm--SUSY construction applied to $T_f$ satisfies
 \[
-\boxed{\Delta_W(H_k)=-k=\indop(S^k)},
+\boxed{
+\Delta_W(T_f)
+=
+-\operatorname{wind}(f,0).
+}
 \]
-and exactly $k$ zero modes are protected in the negative grading sector.
+If the symbol has unit modulus,
+\[
+f(e^{i\theta})=e^{i\phi(\theta)},
+\]
+with a continuous phase lift $\phi$, then
+\[
+\boxed{
+\Delta_W
+=
+-\frac{\phi(2\pi)-\phi(0)}{2\pi}.
+}
+\]
+Thus the supersymmetric index is exactly the integer winding charge of the Euler phase.
+\end{theorem}
+
+The result is a specialization of standard Toeplitz/Fredholm theory combined with Theorem~\ref{thm:fredholm-susy}; no novelty claim is made for the component index theorems.
+
+\subsection{Hilbert Hotel as the monomial sector}
+
+For
+\[
+f(z)=z^k,
+\]
+one has
+\[
+T_f=S^k,
+\]
+where $S$ is the unilateral shift. Hence
+\[
+S^{\dagger k}S^k=I,
+\qquad
+S^kS^{\dagger k}=I-P_k,
+\]
+with $P_k$ the projection onto $\operatorname{span}\{1,z,\ldots,z^{k-1}\}$.
+
+\begin{corollary}[Hilbert-Hotel defect]\label{cor:hotel}
+\[
+\boxed{
+\Delta_W
+=
+\indop(S^k)
+=
+-k.
+}
+\]
+Exactly $k$ protected zero modes occur in the negative grading sector.
 \end{corollary}
 
-\subsection{Zero-centred analytic carrier}
-On Hardy space $H^2(\mathbb D)$, multiplication by $z$ is exactly the unilateral shift on the basis $1,z,z^2,\ldots$. The distinguished zero $z=0$ determines the codimension-one subspace
+The missing rooms are therefore not metaphorical in this representation: they are the cokernel of the isometric embedding and simultaneously the unpaired supersymmetric zero modes.
+
+\section{Analytic zeros as protected zero modes}
+
+Let
 \[
-zH^2(\mathbb D)=\{f\in H^2(\mathbb D):f(0)=0\}.
+B(z)
+=
+e^{i\alpha}
+\prod_{j=1}^{r}
+\left(
+\frac{z-a_j}{1-\overline{a_j}z}
+\right)^{m_j},
+\qquad
+|a_j|<1,
 \]
-Hence a zero-centred complex analytic domain supports the theorem once the Hilbert carrier is specified. The point $0$ alone does not force a unique supercharge.
+be a finite Blaschke product and let
+\[
+k=\sum_{j=1}^r m_j.
+\]
+On the boundary, $|B|=1$, so $\operatorname{wind}(B)=k$. Since $B$ is analytic and inner, $T_B=M_B$ is an isometry and
+\[
+\operatorname{ran}M_B=BH^2.
+\]
+
+\begin{corollary}[Zero-count / Witten-index identity]\label{cor:blaschke}
+The model space
+\[
+K_B=H^2\ominus BH^2
+\]
+is the protected zero-mode space and
+\[
+\boxed{
+\# Z_{\mathbb D}(B)
+=
+\operatorname{wind}(B)
+=
+-\indop(T_B)
+=
+-\Delta_W
+=
+\dim K_B,
+}
+\]
+where zeros are counted with multiplicity.
+\end{corollary}
+
+For simple zeros, $K_B$ is generated by the Hardy reproducing kernels associated with those zeros; higher multiplicities introduce the corresponding derivative kernels. Thus analytic zero multiplicity has an explicit zero-mode realization rather than only an abstract index count.
+
+\section{Topological protection and modular composition}
+
+\begin{proposition}[Homotopy protection]\label{prop:homotopy}
+If
+\[
+f_t:S^1\to\mathbb C\setminus\{0\},
+\qquad t\in[0,1],
+\]
+is a continuous homotopy through nonvanishing symbols, then
+\[
+\boxed{
+\Delta_W(T_{f_t})=\text{constant}.
+}
+\]
+A change of the protected zero-mode imbalance requires the symbol to cross zero on the boundary, where Fredholmness can fail.
+\end{proposition}
+
+The index is also unchanged by compact perturbations that preserve Fredholmness. At the topological-charge level,
+\[
+\operatorname{wind}(fg)
+=
+\operatorname{wind}(f)+\operatorname{wind}(g),
+\]
+so
+\[
+\boxed{
+\Delta_W(fg)
+=
+\Delta_W(f)+\Delta_W(g).
+}
+\]
+This gives a genuine modular composition law for independently constructed phase defects. For analytic inner factors the corresponding multiplication operators compose exactly; for general Toeplitz symbols the index law is the robust invariant.
