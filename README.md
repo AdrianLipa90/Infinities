@@ -14,6 +14,7 @@ The project studies several mathematically different forms of infinity inside a 
 - **Iterative infinity** — Collatz-type dynamics, unbounded iteration depth, recurrence, stopping times, and orbit structure.
 - **Spectral / analytic infinity** — Dirichlet series, the Riemann zeta function, analytic continuation, and spectral weighting of the natural numbers.
 - **Distributional infinity** — primes, twin primes, sparse infinite subsets, counting functions, and asymptotic structure.
+- **Phase-recursive / branch infinity** — complex phase iteration, repelling fixed points, multi-branch inverses, and symbolic preimage trees, introduced by **Euler's Infinity**.
 
 The objective is comparison and structural unification, not reduction of all of these questions to one theorem.
 
@@ -135,6 +136,49 @@ Moreover,
 \]
 
 The unit circle is therefore the fixed locus of this nonconformal inversion. In `Infinities`, this map is used as a geometric comparison tool between reciprocal sectors; it is **not** presented as a proof mechanism for the Riemann Hypothesis.
+
+## Euler's Infinity — phase-recursive branch infinity
+
+Define the Euler phase map
+
+\[
+\mathcal E(z)=e^{i\pi z}.
+\]
+
+The post-v1.0 research extension **Euler's Infinity** selects the exact fixed-point branch
+
+\[
+\boxed{\mathfrak E_\infty=-1},
+\qquad
+\mathcal E(-1)=-1.
+\]
+
+Its algebraic square-root fibre is
+
+\[
+\boxed{\sqrt{\mathfrak E_\infty}=\{+i,-i\}},
+\]
+
+and the fixed point is repelling under ordinary forward iteration because
+
+\[
+\mathcal E'(-1)=-i\pi,
+\qquad
+|\mathcal E'(-1)|=\pi>1.
+\]
+
+On a declared logarithm branch, the inverse family is
+
+\[
+\boxed{
+\mathcal E_k^{-1}(w)=2k-\frac{i}{\pi}\Log w,
+\qquad k\in\mathbb Z.
+}
+\]
+
+Finite inverse compositions therefore form a countably branching preimage tree. Infinite-address convergence and any specific fractal-dimension claim remain **OPEN / NOT CLAIMED**.
+
+The full definition, Lambert-\(W\) fixed-point representation, branch firewall, and finite regression witness are in `research/EULERS_INFINITY_V0_1.md` and `validate_eulers_infinity_v0_1.py`.
 
 ## Research principle
 
