@@ -17,27 +17,33 @@
 \newcommand{\indop}{\operatorname{ind}}
 \newcommand{\Span}{\operatorname{span}}
 \newcommand{\diagop}{\operatorname{diag}}
-\title{\textbf{Euler--Hilbert-Hotel Supersymmetry}\\\large Winding index, protected zero modes, and binary-tetrahedral covariance}
+\title{\textbf{Euler--Hilbert-Hotel Supersymmetry}\\\large Stable index classification, analytic zero modes, and binary-tetrahedral covariance}
 \author{Adrian Lipa}
 \date{22 September 2026}
 \begin{document}
 \maketitle
 \begin{abstract}
-We separate two supersymmetry constructions into independently checkable theorem modules. First, every bounded Fredholm operator gives the standard doubled-space $\mathcal N=2$ supersymmetric quantum-mechanical factorization, with Witten index equal to the Fredholm index. Specializing to Toeplitz operators on Hardy space yields
+We formulate two independent supersymmetry theorem modules. In the operator module, the standard Fredholm $\mathcal N=2$ factorization is combined with the Atiyah--J\"anich classification $\pi_0(\operatorname{Fred}(\mathcal H))\cong\mathbb Z$: the Witten index is the complete connected-component invariant, and unilateral shifts or adjoint shifts provide explicit Hilbert-Hotel normal representatives for every integer class. In the scalar Toeplitz sector,
 \[
-\Delta_W(T_f)=-\operatorname{wind}(f),
+\Delta_W(T_f)=\operatorname{ind}(T_f)=-\operatorname{wind}(f),
 \]
-so the Hilbert-Hotel shift $S^k=T_{z^k}$ is the monomial case $\Delta_W=-k$. For finite Blaschke products this identifies analytic zero multiplicity with the dimension of the protected supersymmetric zero-mode space. The index is homotopy and compact-perturbation protected.
+and the Toeplitz extension identifies this integer as the $K$-theory boundary image of the boundary-phase class. Finite Blaschke products sharpen the statement from an index count to an explicit zero-mode realization: $K_B=H^2\ominus BH^2$ is exactly the protected zero-mode space, and normalized reproducing-kernel overlaps recover the pseudohyperbolic geometry of the analytic zero locations.
 
-Second, the regular tetrahedral qubit frame is shown to be exactly the projective Pauli $V_4$ orbit of one fiducial SIC projector. Its determinant-one Pauli lift is $Q_8$, and adjoining the canonical threefold spin rotation gives the binary tetrahedral group $2T$. The tetrahedral null-spinor/CAR construction then realizes the $3+1$ dimensional $\mathcal N=1$ supertranslation algebra and admits a binary-tetrahedral equivariant formulation. Standard component theorems are identified as such; the contribution of this note is the explicit synthesis, modular theorem packaging, and exact crosswalk between the index and tetrahedral-spinor sectors.
+Independently, the tetrahedral module identifies the regular qubit SIC as the projective Pauli $V_4$ orbit, extends the $Q_8$ spin lift to the binary tetrahedral group $2T$, and realizes a $3+1$ dimensional $\mathcal N=1$ supertranslation algebra after explicit CAR input. Equal tetrahedral weights define a timelike rest axis fixed by the tetrahedral rotational symmetry. Classical component theorems are explicitly marked as such; the contribution is the modular theorem packaging, exact normal forms, and explicit crosswalks between phase topology, Fredholm defects, protected zero modes, and finite spinorial covariance.
 \end{abstract}
 \input{ehh_sections/01_scope}
 \input{ehh_sections/02_shift_susy}
 \input{ehh_sections/03_tetrahedral}
 \input{ehh_sections/04_boundaries}
-\begin{thebibliography}{9}
+\begin{thebibliography}{99}
 \bibitem{Witten1981} E. Witten, ``Dynamical Breaking of Supersymmetry,'' \emph{Nuclear Physics B} \textbf{188} (1981), 513--554.
 \bibitem{Cooper1995} F. Cooper, A. Khare, and U. Sukhatme, ``Supersymmetry and quantum mechanics,'' \emph{Physics Reports} \textbf{251} (1995), 267--385.
+\bibitem{Janich1965} K. J\"anich, ``Vektorraumb\"undel und der Raum der Fredholm-Operatoren,'' \emph{Mathematische Annalen} \textbf{161} (1965), 129--142, doi:10.1007/BF01360851.
+
+\bibitem{Douglas1998} R. G. Douglas, \emph{Banach Algebra Techniques in Operator Theory}, 2nd ed., Graduate Texts in Mathematics 179, Springer, 1998.
+
+\bibitem{Sarason1994} D. Sarason, \emph{Sub-Hardy Hilbert Spaces in the Unit Disk}, Wiley, 1994.
+
 \bibitem{BaumVanErp2021} P. F. Baum and E. van Erp, ``The Index Theorem for Toeplitz Operators as a Corollary of Bott Periodicity,'' \emph{Quarterly Journal of Mathematics} \textbf{72} (2021), 547--569, doi:10.1093/qmath/haab008.
 
 \bibitem{Izumi2026} M. Izumi, ``A generalized winding number formula for the Witten index of a Toeplitz operator,'' \emph{Journal of Spectral Theory}, online first (2026), doi:10.4171/JST/593.
