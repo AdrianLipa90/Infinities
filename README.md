@@ -177,13 +177,19 @@ The freeze deliberately does **not** establish a universal minimal operator gram
 
 ## Post-freeze additive research: Euler-Hilbert-Hotel supersymmetry
 
-The additive v1.2 research note `research/EULER_HILBERT_HOTEL_SUPERSYMMETRY_V0_1.md` connects the existing unilateral-shift defect to a standard N=2 supersymmetric quantum-mechanical factorization:
+The supersymmetry programme is now split into independently checkable theorem modules.
 
-`Delta_W(H_k) = ind(S^k) = -k`.
+The v0.2 note `research/EULER_HILBERT_HOTEL_SUPERSYMMETRY_V0_2.md` promotes the operator result to the general Fredholm/Toeplitz form
 
-It also records an exact tetrahedral null-generated causal-cone identity and an N=1 supertranslation realization after explicit fermionic CAR modes are supplied. The companion article source is `papers/euler_hilbert_hotel_supersymmetry.tex`, with scoped claims in `CLAIMS_V1_2.md`.
+[
+Delta_W(T_f)=-operatorname{wind}(f),
+]
 
-These are exact operator/algebra constructions in their declared models. They are not promoted to physical supersymmetry, a theory of everything, or a proof of any open number-theory problem.
+with Hilbert Hotel as the monomial specialization `T_{z^k}=S^k`, and with the finite-Blaschke corollary identifying analytic zero multiplicity with protected supersymmetric zero-mode multiplicity.
+
+The tetrahedral module is sharpened independently: the four projectors are the qubit SIC and exactly the projective Pauli V4 orbit of one fiducial state; the Q8 spin lift extends to the binary tetrahedral group 2T, and the CAR-based N=1 supertranslation construction is equivariant under that action.
+
+The LaTeX paper is `papers/euler_hilbert_hotel_supersymmetry.tex`. Scoped claims are in `CLAIMS_V1_2.md` and `CLAIMS_V1_3.md`.
 
 ## Status
 
