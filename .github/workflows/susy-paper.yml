@@ -1,0 +1,36 @@
+name: build-susy-paper
+
+on:
+  pull_request:
+    paths:
+      - "papers/euler_hilbert_hotel_supersymmetry.tex"
+      - "papers/ehh_sections/**"
+      - ".github/workflows/susy-paper.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install LaTeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y latexmk texlive-latex-base texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended lmodern
+      - name: Compile paper
+        working-directory: papers
+        run: |
+          latexmk -pdf -interaction=nonstopmode -halt-on-error euler_hilbert_hotel_supersymmetry.tex
+      - name: Stage artifact
+        run: |
+          mkdir -p dist
+          cp papers/euler_hilbert_hotel_supersymmetry.pdf dist/Euler_Hilbert_Hotel_Supersymmetry_v0_4.pdf
+      - name: Upload PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: Euler-Hilbert-Hotel-Supersymmetry-v0.4
+          path: dist/Euler_Hilbert_Hotel_Supersymmetry_v0_4.pdf
+          if-no-files-found: error

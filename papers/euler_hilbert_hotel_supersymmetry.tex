@@ -1,0 +1,63 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,microtype,geometry}
+\geometry{margin=27mm}
+\usepackage{amsmath,amssymb,mathtools,amsthm,mathrsfs,booktabs,enumitem,xcolor,hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue!55!black,citecolor=blue!55!black,urlcolor=blue!55!black}
+\setlist{nosep}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\Hil}{\mathcal H}
+\newcommand{\BigHil}{\mathscr H}
+\newcommand{\C}{\mathbb C}
+\newcommand{\N}{\mathbb N}
+\newcommand{\indop}{\operatorname{ind}}
+\newcommand{\Span}{\operatorname{span}}
+\newcommand{\diagop}{\operatorname{diag}}
+\title{\textbf{Euler--Hilbert-Hotel Supersymmetry}\\\large Stable index classification, analytic zero modes, and an equivariant Naimark--CAR lift}
+\author{Adrian Lipa}
+\date{22 September 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We formulate two independent supersymmetry theorem modules. In the operator module, the standard Fredholm $\mathcal N=2$ factorization is combined with the Atiyah--J\"anich classification $\pi_0(\operatorname{Fred}(\mathcal H))\cong\mathbb Z$: the Witten index is the complete connected-component invariant, and unilateral shifts or adjoint shifts provide explicit Hilbert-Hotel normal representatives for every integer class. In the scalar Toeplitz sector,
+\[
+\Delta_W(T_f)=\operatorname{ind}(T_f)=-\operatorname{wind}(f),
+\]
+and the Toeplitz extension identifies this integer as the $K$-theory boundary image of the boundary-phase class. Finite Blaschke products sharpen the statement from an index count to an explicit zero-mode realization: $K_B=H^2\ominus BH^2$ is exactly the protected zero-mode space, and normalized reproducing-kernel overlaps recover the pseudohyperbolic geometry of the analytic zero locations.
+
+Independently, the tetrahedral module identifies the regular qubit SIC as the projective Pauli $V_4$ orbit and its binary tetrahedral spin lift $2T$. The rank-one SIC defines a minimal four-outcome Naimark dilation $V:\mathbb C^2\hookrightarrow\mathbb C^4$ carrying an explicit $2T$-equivariant monomial representation. Applying standard fermionic second quantization to the conjugate outcome representation produces the four CAR modes and an $\mathcal N=1$ supertranslation algebra; the central spinor element $-I\in2T$ is sent exactly to fermion parity $(-1)^F$. Equal tetrahedral weights define a timelike rest axis fixed by the tetrahedral rotational symmetry. Classical component theorems are explicitly marked as such; the contribution is the modular theorem packaging and the exact crosswalks between phase topology, Fredholm defects, protected zero modes, finite spin symmetry, Naimark dilation, and CAR grading.
+\end{abstract}
+\input{ehh_sections/01_scope}
+\input{ehh_sections/02_shift_susy}
+\input{ehh_sections/03_tetrahedral}
+\input{ehh_sections/04_boundaries}
+\begin{thebibliography}{99}
+\bibitem{Witten1981} E. Witten, ``Dynamical Breaking of Supersymmetry,'' \emph{Nuclear Physics B} \textbf{188} (1981), 513--554.
+\bibitem{Cooper1995} F. Cooper, A. Khare, and U. Sukhatme, ``Supersymmetry and quantum mechanics,'' \emph{Physics Reports} \textbf{251} (1995), 267--385.
+\bibitem{Janich1965} K. J\"anich, ``Vektorraumb\"undel und der Raum der Fredholm-Operatoren,'' \emph{Mathematische Annalen} \textbf{161} (1965), 129--142, doi:10.1007/BF01360851.
+
+\bibitem{Douglas1998} R. G. Douglas, \emph{Banach Algebra Techniques in Operator Theory}, 2nd ed., Graduate Texts in Mathematics 179, Springer, 1998.
+
+\bibitem{Sarason1994} D. Sarason, \emph{Sub-Hardy Hilbert Spaces in the Unit Disk}, Wiley, 1994.
+
+\bibitem{BaumVanErp2021} P. F. Baum and E. van Erp, ``The Index Theorem for Toeplitz Operators as a Corollary of Bott Periodicity,'' \emph{Quarterly Journal of Mathematics} \textbf{72} (2021), 547--569, doi:10.1093/qmath/haab008.
+
+\bibitem{Izumi2026} M. Izumi, ``A generalized winding number formula for the Witten index of a Toeplitz operator,'' \emph{Journal of Spectral Theory}, online first (2026), doi:10.4171/JST/593.
+
+\bibitem{Renes2004} J. M. Renes, R. Blume-Kohout, A. J. Scott, and C. M. Caves, ``Symmetric informationally complete quantum measurements,'' \emph{Journal of Mathematical Physics} \textbf{45} (2004), 2171--2180, doi:10.1063/1.1737053.
+
+\bibitem{ConwaySmith} J. H. Conway and D. A. Smith, \emph{On Quaternions and Octonions}, A K Peters, 2003.
+
+\bibitem{Decker2005} T. Decker, D. Janzing, and M. R\"otteler, ``Implementation of group-covariant positive operator valued measures by orthogonal measurements,'' \emph{Journal of Mathematical Physics} \textbf{46} (2005), 012104, doi:10.1063/1.1827924.
+
+\bibitem{BratteliRobinson1997} O. Bratteli and D. W. Robinson, \emph{Operator Algebras and Quantum Statistical Mechanics 2}, 2nd ed., Springer, 1997.
+
+\bibitem{PenroseRindler} R. Penrose and W. Rindler, \emph{Spinors and Space-Time, Vol. 1}, Cambridge University Press, 1984.
+\bibitem{LipaInfinities} A. Lipa, \emph{Infinities}, research repository, 2026. \url{https://github.com/AdrianLipa90/Infinities}
+\bibitem{LipaSOH} A. Lipa, ``SOH-G013 -- Pauli / SU(2) Spinor Lift of the Projective Operator Algebra,'' \emph{Secret-of-a-Half}, 2026. \url{https://github.com/AdrianLipa90/secret-of-a-half/blob/main/research/SOH_G013_PAULI_SPINOR_LIFT_V0_1.md}
+\end{thebibliography}
+\end{document}

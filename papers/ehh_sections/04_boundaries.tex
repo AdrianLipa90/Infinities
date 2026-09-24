@@ -1,0 +1,142 @@
+\section{What has actually been unified}
+
+The two main results are deliberately not collapsed into one theorem.
+
+The operator brick is
+\[
+\boxed{
+\text{boundary phase}
+\longrightarrow
+\text{winding}
+\longrightarrow
+\text{Toeplitz/Fredholm index}
+\longrightarrow
+\text{Witten index}.
+}
+\]
+Its Hilbert-Hotel specialization is
+\[
+\boxed{
+z^k\longrightarrow S^k\longrightarrow\Delta_W=-k.}
+\]
+For finite Blaschke products the same integer is also the zero count in the disk.
+
+The tetrahedral brick is
+\[
+\boxed{
+\text{qubit SIC}
+\longleftrightarrow
+V_4
+\longleftarrow
+Q_8
+\subset
+2T
+\longrightarrow
+\text{spinorially covariant }\mathcal N=1\text{ supertranslation frame}.
+}
+\]
+
+These are separate constructions sharing Pauli/spinorial language. No additional identification is required for either theorem to stand.
+
+\section{Novelty firewall}
+
+The paper distinguishes the following layers.
+
+\begin{center}
+\begin{tabular}{p{0.28\textwidth}p{0.60\textwidth}}
+\toprule
+\textbf{Layer} & \textbf{Status}\\
+\midrule
+Fredholm--SUSY factorization & Standard theorem / exact construction.\\
+Atiyah--J\"anich $\pi_0(\mathrm{Fred})\cong\mathbb Z$ & Standard homotopy/K-theory classification.\\
+Toeplitz index $=-$ winding & Classical theorem; modern Witten-index extensions also exist.\\
+Toeplitz extension $K_1\to K_0$ & Standard $C^*$-algebra/K-theory index mechanism.\\
+Finite-Blaschke model-space count and kernel modes & Standard Hardy/model-space theory; exact SUSY realization here.\\
+Qubit tetrahedron as SIC & Standard quantum-information geometry.\\
+$Q_8\subset2T$ and projective $A_4$ & Standard binary-polyhedral group theory.\\
+Covariant Naimark dilation of the tetrahedral SIC & Standard dilation theory; explicit $2T$ specialization proved here.\\
+Fermionic Fock/CAR construction & Standard second quantization; applied to the conjugate Naimark outcome representation.\\
+$-I_{\rm spinor}\mapsto(-1)^F$ & Exact specialized center-to-grading crosswalk; physical spin-statistics theorem not claimed.\\
+Tetrahedral CAR supertranslation realization & Exact algebraic construction after the standard fermionic Fock choice.\\
+Combined theorem packaging and crosswalk & Present synthesis; component novelty not claimed.\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Falsification boundaries}
+
+The following statements are \emph{not} consequences of the present mathematics.
+
+\begin{enumerate}[label=\textbf{F\arabic*.}]
+\item A bare pointed complex plane does not determine a unique Fredholm operator or supercharge.
+\item Tetrahedral geometry alone does not force the fermionic second-quantization functor. Once that standard functor is chosen, however, the CAR modes are induced from the minimal Naimark outcome carrier rather than supplied as an independent four-mode basis.
+\item The existence of the mathematical supersymmetry algebras does not establish that a corresponding supersymmetry is realized by Nature.
+\item The two supersymmetry bricks need not arise from a single physical model.
+\end{enumerate}
+
+The useful content is therefore structural and testable: each brick comes with explicit hypotheses, exact algebra, a topological or group-theoretic invariant, and a clear boundary at which the theorem stops.
+
+\section{Conclusion}
+
+The operator sector is now a complete stable classification statement. For bounded Fredholm supercharges,
+\[
+\boxed{
+\pi_0(\operatorname{Fred}(\Hil))
+\cong
+\mathbb Z,
+\qquad
+[A]\longmapsto\Delta_W(A)=\indop(A).
+}
+\]
+Every connected component has an explicit Hilbert-Hotel normal representative built from $S$ or $S^\dagger$.
+
+For scalar Toeplitz symbols the charge is computed directly from the Euler boundary phase:
+\[
+\boxed{
+\Delta_W(T_f)
+=
+\indop(T_f)
+=
+-\operatorname{wind}(f).
+}
+\]
+The Toeplitz extension packages this as the boundary map
+\[
+\boxed{
+K_1(C(S^1))
+\xrightarrow{\ \partial\ }
+K_0(\mathcal K)
+\cong\mathbb Z,
+\qquad
+\partial[u_f]=\Delta_W(T_f).
+}
+\]
+So the phase charge and the protected zero-mode imbalance are not merely equal integers: they are the input and output of the standard index boundary map.
+
+For a finite Blaschke product the identification becomes fully concrete:
+\[
+\boxed{
+\#Z_{\mathbb D}(B)
+=
+-\Delta_W(T_B)
+=
+\dim K_B,
+}
+\]
+and $K_B$ is literally the kernel of the negative-sector SUSY Hamiltonian. The normalized kernel-mode overlaps obey
+\[
+|\langle\kappa_a,\kappa_b\rangle|^2
+=
+1-\rho(a,b)^2,
+\]
+so the protected zero-mode Hilbert space retains the pseudohyperbolic geometry of the analytic zero positions in addition to their topological count.
+
+Independently, the tetrahedral sector is the minimal qubit SIC and projective Pauli orbit, with $Q_8$ as the quaternionic core and $2T$ as the full orientation-preserving spin lift. Its rank-one SIC determines a minimal four-outcome Naimark carrier, and the standard fermionic Fock functor on the conjugate outcome representation produces the CAR grading with the exact center identity $-I\mapsto(-1)^F$. Equal weights give
+\[
+P^\mu=(4p,0,0,0),
+\qquad
+P^2=16p^2,
+\]
+an exact tetrahedral rest frame preserved by the combined binary-tetrahedral spin/CAR action.
+
+The result is therefore modular supersymmetry in a strict sense: one brick is a complete $\mathbb Z$-classified Fredholm/index theory with explicit zero modes, while the other is an equivariant finite spinorial/Naimark/CAR construction. The latter no longer requires an independently postulated four-mode CAR basis, but it still requires the standard choice of fermionic second quantization and does not by itself establish physical fermions or physical supersymmetry.

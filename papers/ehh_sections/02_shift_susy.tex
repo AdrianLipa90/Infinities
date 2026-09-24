@@ -1,0 +1,397 @@
+\section{Fredholm factorization and $\mathcal N=2$ supersymmetry}
+
+Let $A:\Hil_+\to\Hil_-$ be a bounded Fredholm operator. On
+\[
+\BigHil=\Hil_+\oplus\Hil_-
+\]
+define
+\[
+\Gamma=
+\begin{pmatrix}
+I&0\\
+0&-I
+\end{pmatrix},
+\qquad
+\mathcal Q_A=
+\begin{pmatrix}
+0&0\\
+A&0
+\end{pmatrix},
+\qquad
+\mathcal Q_A^\dagger=
+\begin{pmatrix}
+0&A^\dagger\\
+0&0
+\end{pmatrix}.
+\]
+
+\begin{theorem}[Fredholm--SUSY factorization]\label{thm:fredholm-susy}
+The operators satisfy
+\[
+\mathcal Q_A^2=(\mathcal Q_A^\dagger)^2=0,
+\qquad
+\{\Gamma,\mathcal Q_A\}
+=
+\{\Gamma,\mathcal Q_A^\dagger\}
+=0,
+\]
+and
+\[
+H_A
+=
+\{\mathcal Q_A,\mathcal Q_A^\dagger\}
+=
+\begin{pmatrix}
+A^\dagger A&0\\
+0&AA^\dagger
+\end{pmatrix}
+\ge0.
+\]
+For
+\[
+Q_1=\mathcal Q_A+\mathcal Q_A^\dagger,
+\qquad
+Q_2=i(\mathcal Q_A^\dagger-\mathcal Q_A),
+\]
+one has
+\[
+\boxed{\{Q_i,Q_j\}=2\delta_{ij}H_A},
+\qquad
+[H_A,Q_i]=0,
+\qquad
+\{\Gamma,Q_i\}=0.
+\]
+Moreover
+\[
+\ker H_+=\ker A,
+\qquad
+\ker H_-=\ker A^\dagger,
+\]
+and therefore
+\[
+\boxed{
+\Delta_W
+=
+\dim\ker A-\dim\ker A^\dagger
+=
+\indop(A).
+}
+\]
+\end{theorem}
+
+\begin{proof}
+All algebraic relations follow by block multiplication. The kernels of $A^\dagger A$ and $A$ coincide, as do the kernels of $AA^\dagger$ and $A^\dagger$. Since $A$ is Fredholm these spaces are finite-dimensional, giving the index identity.
+\end{proof}
+
+Every positive eigenvalue is paired between the two grading sectors by $A$ and $A^\dagger$; only zero modes can remain unpaired. The integer index therefore measures the protected supersymmetric imbalance.
+
+\section{Stable classification and Hilbert-Hotel normal form}
+
+For a separable infinite-dimensional complex Hilbert space, the Atiyah--J\"anich theorem implies
+\[
+\boxed{
+\pi_0(\operatorname{Fred}(\Hil))\cong\mathbb Z,
+\qquad
+[A]\longmapsto\indop(A).
+}
+\]
+Combined with Theorem~\ref{thm:fredholm-susy}, the Witten index is therefore a complete invariant of connected components of bounded Fredholm supercharges.
+
+Let $S$ denote the unilateral shift. Since
+\[
+\indop(S^k)=-k,
+\qquad
+\indop((S^\dagger)^k)=k,
+\]
+define the normal representative
+\[
+A_q=
+\begin{cases}
+(S^\dagger)^q,&q>0,\\
+I,&q=0,\\
+S^{-q},&q<0.
+\end{cases}
+\]
+
+\begin{theorem}[Hilbert-Hotel normal form]\label{thm:hotel-normal-form}
+Every bounded Fredholm $\mathcal N=2$ supercharge $A$ is connected, through a norm-continuous path of Fredholm operators, to $A_q$ with
+\[
+q=\Delta_W(A)=\indop(A).
+\]
+Consequently
+\[
+\boxed{
+[A]_{\rm Fredholm\ homotopy}
+\longleftrightarrow
+\Delta_W(A)\in\mathbb Z
+\longleftrightarrow
+A_q.
+}
+\]
+\end{theorem}
+
+This is the precise universal Hilbert-Hotel statement: shifts and adjoint shifts are explicit normal representatives for all connected components of the bounded-Fredholm supersymmetric problem. The component classification is standard; the point here is the explicit SUSY/Hilbert-Hotel interpretation.
+
+\section{Euler--Toeplitz--Hilbert-Hotel index theorem}
+
+Let $H^2(\mathbb D)$ be Hardy space and let $T_f$ denote the Toeplitz operator with continuous symbol
+\[
+f:S^1\to\mathbb C\setminus\{0\}.
+\]
+The classical Toeplitz index theorem gives
+\[
+\indop(T_f)=-\operatorname{wind}(f,0).
+\]
+
+\begin{theorem}[Euler--Toeplitz--Hilbert-Hotel SUSY index]\label{thm:toeplitz-susy}
+The Fredholm--SUSY construction applied to $T_f$ satisfies
+\[
+\boxed{
+\Delta_W(T_f)
+=
+-\operatorname{wind}(f,0).
+}
+\]
+If the symbol has unit modulus,
+\[
+f(e^{i\theta})=e^{i\phi(\theta)},
+\]
+with a continuous phase lift $\phi$, then
+\[
+\boxed{
+\Delta_W
+=
+-\frac{\phi(2\pi)-\phi(0)}{2\pi}.
+}
+\]
+Thus the supersymmetric index is exactly the integer winding charge of the Euler phase.
+\end{theorem}
+
+The result is a specialization of standard Toeplitz/Fredholm theory combined with Theorem~\ref{thm:fredholm-susy}; no novelty claim is made for the component index theorems.
+
+Because two continuous nonvanishing scalar symbols have the same winding number exactly when they are homotopic through $\mathbb C^\times$, one obtains the stronger classification statement
+\[
+\boxed{
+f\simeq g
+\iff
+\Delta_W(T_f)=\Delta_W(T_g).
+}
+\]
+Thus the Witten index is a complete invariant of scalar nonvanishing-symbol Toeplitz SUSY sectors under symbol homotopy.
+
+\subsection{Toeplitz extension and the $K$-theory boundary map}
+
+The Toeplitz $C^*$-algebra fits into the extension
+\[
+0\longrightarrow\mathcal K
+\longrightarrow\mathcal T
+\longrightarrow C(S^1)
+\longrightarrow0.
+\]
+For a nonvanishing symbol set $u_f=f/|f|$. The connecting map in the six-term exact sequence is
+\[
+\partial:
+K_1(C(S^1))
+\longrightarrow
+K_0(\mathcal K).
+\]
+With the sign convention fixed by $\partial[z]=\indop(T_z)=-1$,
+\[
+\boxed{
+\partial[u_f]
+=
+\indop(T_f)
+=
+\Delta_W(T_f)
+=
+-\operatorname{wind}(f).
+}
+\]
+Since $K_1(C(S^1))\cong\mathbb Z$ and $K_0(\mathcal K)\cong\mathbb Z$, the Euler boundary phase carries the $K_1$ charge and the protected Fredholm/Witten defect is its $K_0$ boundary image.
+
+\subsection{Hilbert Hotel as the monomial sector}
+
+For
+\[
+f(z)=z^k,
+\]
+one has
+\[
+T_f=S^k,
+\]
+where $S$ is the unilateral shift. Hence
+\[
+S^{\dagger k}S^k=I,
+\qquad
+S^kS^{\dagger k}=I-P_k,
+\]
+with $P_k$ the projection onto $\operatorname{span}\{1,z,\ldots,z^{k-1}\}$.
+
+\begin{corollary}[Hilbert-Hotel defect]\label{cor:hotel}
+\[
+\boxed{
+\Delta_W
+=
+\indop(S^k)
+=
+-k.
+}
+\]
+Exactly $k$ protected zero modes occur in the negative grading sector.
+\end{corollary}
+
+The missing rooms are therefore not metaphorical in this representation: they are the cokernel of the isometric embedding and simultaneously the unpaired supersymmetric zero modes.
+
+\section{Analytic zeros as protected zero modes}
+
+Let
+\[
+B(z)
+=
+e^{i\alpha}
+\prod_{j=1}^{r}
+\left(
+\frac{z-a_j}{1-\overline{a_j}z}
+\right)^{m_j},
+\qquad
+|a_j|<1,
+\]
+be a finite Blaschke product and let
+\[
+k=\sum_{j=1}^r m_j.
+\]
+On the boundary, $|B|=1$, so $\operatorname{wind}(B)=k$. Since $B$ is analytic and inner, $T_B=M_B$ is an isometry and
+\[
+\operatorname{ran}M_B=BH^2.
+\]
+
+\begin{corollary}[Zero-count / Witten-index identity]\label{cor:blaschke}
+The model space
+\[
+K_B=H^2\ominus BH^2
+\]
+is the protected zero-mode space and
+\[
+\boxed{
+\# Z_{\mathbb D}(B)
+=
+\operatorname{wind}(B)
+=
+-\indop(T_B)
+=
+-\Delta_W
+=
+\dim K_B,
+}
+\]
+where zeros are counted with multiplicity.
+\end{corollary}
+
+For simple zeros, $K_B$ is generated by the Hardy reproducing kernels associated with those zeros; higher multiplicities introduce the corresponding derivative kernels. Thus analytic zero multiplicity has an explicit zero-mode realization rather than only an abstract index count.
+
+In fact the complete Hamiltonian is explicit. Since $M_B$ is an isometry,
+\[
+M_B^\dagger M_B=I,
+\qquad
+M_BM_B^\dagger=P_{BH^2}=I-P_{K_B},
+\]
+and therefore
+\[
+\boxed{
+H_B=
+\begin{pmatrix}
+I&0\\
+0&I-P_{K_B}
+\end{pmatrix}.
+}
+\]
+Thus the protected negative-sector zero-mode Hilbert space is exactly $K_B$, not merely a space of the correct dimension.
+
+For a simple zero $a$ of $B$, the Hardy reproducing kernel
+\[
+k_a(z)=\frac{1}{1-\overline a z}
+\]
+satisfies
+\[
+M_B^\dagger k_a
+=
+\overline{B(a)}k_a
+=
+0.
+\]
+Hence each simple analytic zero gives an explicit protected zero-mode wavefunction. Repeated zeros produce the standard derivative-kernel chain.
+
+For normalized kernels
+\[
+\kappa_a(z)=\frac{\sqrt{1-|a|^2}}{1-\overline a z},
+\]
+one has the exact overlap identity
+\[
+\boxed{
+|\langle\kappa_a,\kappa_b\rangle|^2
+=
+\frac{(1-|a|^2)(1-|b|^2)}{|1-\overline a b|^2}
+=
+1-\rho(a,b)^2,
+}
+\]
+where
+\[
+\rho(a,b)
+=
+\left|\frac{a-b}{1-\overline a b}\right|
+\]
+is the pseudohyperbolic distance. Thus the Witten index remembers the total protected multiplicity, while the zero-mode overlaps retain the internal hyperbolic geometry of the zero locations.
+
+\section{Topological protection and modular composition}
+
+\begin{proposition}[Homotopy protection]\label{prop:homotopy}
+If
+\[
+f_t:S^1\to\mathbb C\setminus\{0\},
+\qquad t\in[0,1],
+\]
+is a continuous homotopy through nonvanishing symbols, then
+\[
+\boxed{
+\Delta_W(T_{f_t})=\text{constant}.
+}
+\]
+A change of the protected zero-mode imbalance requires the symbol to cross zero on the boundary, where Fredholmness can fail.
+\end{proposition}
+
+The index is also unchanged by compact perturbations that preserve Fredholmness. At the topological-charge level,
+\[
+\operatorname{wind}(fg)
+=
+\operatorname{wind}(f)+\operatorname{wind}(g),
+\]
+so
+\[
+\boxed{
+\Delta_W(fg)
+=
+\Delta_W(f)+\Delta_W(g).
+}
+\]
+This gives a genuine modular composition law for independently constructed phase defects. For analytic inner factors the corresponding multiplication operators compose exactly; for general Toeplitz symbols the index law is the robust invariant.
+
+Also
+\[
+\boxed{
+\Delta_W(f^{-1})=-\Delta_W(f),
+}
+\]
+and for general Fredholm supercharges
+\[
+\boxed{
+\Delta_W(A\oplus B)
+=
+\Delta_W(A)+\Delta_W(B).
+}
+\]
+Thus the connected components form an integer-valued stable charge: stacking adds charges, and stacking with the inverse returns to the neutral component.
+
+\subsection{Demarcation from Izumi's 2026 extension}
+
+The Fredholm identity $\indop(T_f)=-\operatorname{wind}(f)$ is classical. Izumi's 2026 theorem extends winding-number formulas to a generalized Witten index for broader almost-normal Toeplitz operators, including non-Fredholm settings where a principal-value formula is required. The present construction deliberately stays in the integer-valued Fredholm sector and does not claim Izumi's extension as new.

@@ -34,6 +34,42 @@ jobs:
         run: python validation/validate_v1_0_freeze.py
       - name: Run BMF v1.1 absolute-fold controls
         run: python validation/validate_bmf_infinite_fold_v1_1.py
+      - name: Run Euler-Hilbert-Hotel supersymmetry controls v0.1
+        run: python validation/validate_euler_hilbert_susy_v0_1.py
+      - name: Run Euler-Toeplitz-Hilbert-Hotel supersymmetry controls v0.2
+        run: python validation/validate_euler_hilbert_susy_v0_2.py
+      - name: Run stable SUSY classification controls v0.3
+        run: python validation/validate_euler_hilbert_susy_v0_3.py
+      - name: Run SIC-Naimark-McKay SUSY controls v0.5
+        run: python validation/validate_euler_hilbert_susy_v0_5.py
+      - name: Run TIR SIC-Naimark-CAR supersymmetry controls v0.1
+        run: python validation/validate_tir_sic_naimark_car_susy_v0_1.py
+      - name: Run TIR Naimark-Fock McKay E6 representation audit v0.1
+        run: python validation/validate_tir_naimark_mckay_e6_v0_1.py
+      - name: Run TIR C3-untwisted Naimark complement doubled rest-frame audit v0.1
+        run: python validation/validate_tir_c3_untwisted_naimark_n2_rest_v0_1.py
+      - name: Run TIR C3-compensated affine-E6 operator-support audit v0.1
+        run: python validation/validate_tir_c3_e6_graph_dynamics_v0_1.py
+      - name: Run Lorentz-transported E6 supertranslation audit v0.1
+        run: python validation/validate_tir_lorentz_transported_e6_v0_1.py
+      - name: Run C3-resolved N2 long-multiplet audit v0.1
+        run: python validation/validate_tir_c3_resolved_n2_long_multiplets_v0_1.py
+      - name: Run C3 arm and McKay-index localization audit v0.1
+        run: python validation/validate_tir_c3_arm_decomposition_mckay_index_v0_1.py
+      - name: Run cyclic-arm affine-E6 criticality audit v0.1
+        run: python validation/validate_tir_cyclic_arm_criticality_e6_v0_1.py
+      - name: Run TIR C3-untwisted N2 SL2C orbit audit v0.1
+        run: python validation/validate_tir_c3_n2_lorentz_orbit_v0_1.py
+      - name: Run C6-refined supersymmetry grading audit v0.1
+        run: python validation/validate_tir_c6_supergrading_crosswalk_v0_1.py
+      - name: Run affine-critical C6 selection audit v0.1
+        run: python validation/validate_tir_affine_critical_c6_selection_v0_1.py
+      - name: Run exceptional McKay balance and C6 selector audit v0.1
+        run: python validation/validate_tir_exceptional_mckay_balance_c6_selector_v0_1.py
+      - name: Run affine-E6 Fourier Hilbert-Hotel core audit v0.1
+        run: python validation/validate_tir_e6_fourier_hilbert_hotel_core_v0_1.py
+      - name: Run Cartan-SUSY spectral duality audit v0.1
+        run: python validation/validate_tir_cartan_susy_spectral_duality_v0_1.py
       - name: Produce computation snapshot
         run: python computations/run_v0_1.py > computation_snapshot.json
       - name: Produce BMF OOD snapshot

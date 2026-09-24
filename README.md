@@ -219,6 +219,37 @@ The first finite operator programme is frozen at `v1.0.0`. Its strongest scoped 
 
 The freeze deliberately does **not** establish a universal minimal operator grammar or a single universal fourth mathematical operator.
 
+## Post-freeze additive research: Euler-Hilbert-Hotel supersymmetry
+
+The programme is now at v0.3 and is split into independent theorem modules.
+
+The operator module is summarized in `research/EULER_HILBERT_HOTEL_SUPERSYMMETRY_V0_3.md`. Its central classification is
+
+[
+pi_0(mathrm{Fred}(H))
+cong
+mathbb Z,
+qquad
+[A]mapsto
+Delta_W(A)=operatorname{ind}(A),
+]
+
+with explicit Hilbert-Hotel normal representatives built from the unilateral shift and its adjoint.
+
+For scalar Toeplitz symbols,
+
+[
+Delta_W(T_f)
+=
+-operatorname{wind}(f),
+]
+
+and the Toeplitz extension identifies this integer as the K-theory boundary image of the Euler boundary-phase class. Finite Blaschke products give an explicit protected zero-mode space `K_B=H^2 minus B H^2`, not merely an index count; normalized zero modes inherit the pseudohyperbolic geometry of their analytic zero locations.
+
+The tetrahedral module remains independent. Its equal-weight N=1 supertranslation frame has an exact timelike rest axis fixed by the tetrahedral rotational symmetry, with the binary tetrahedral group acting through the spin lift after explicit CAR input.
+
+The LaTeX paper is `papers/euler_hilbert_hotel_supersymmetry.tex`. Scoped claims are in `CLAIMS_V1_2.md` through `CLAIMS_V1_4.md`.
+
 ## Status
 
 **v1.0.0 — finite research-programme freeze.** The first programme is closed as an auditable collection of scoped theorems, counterexamples, finite classifications, typed boundaries, and explicit open questions. `v1.0 COMPLETE` refers to that repository scope only; it does not mean that all mathematical infinities or the open problems named above are solved.
