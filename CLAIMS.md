@@ -70,3 +70,15 @@ Euler's Infinity is a post-v1.0 research extension. The exact fixed-point, deriv
 ## v0.10 firewall
 
 The finite programme now separates exact data-plane theorems from control, representation, and symmetry boundaries. `COUPLE` is conditionally necessary with exact depth only inside the defined finite polynomial grammar. Finite inflationary Boolean fixed points admit bounded unrolling, so their existence does not prove `FIX` primitive independence. Finite quotient structure can be encoded as an equivalence relation on a fixed carrier, so changing quotient cardinality alone does not prove `QUOTIENT` primitive independence. Bare finite sets of size at least two admit no permutation-equivariant canonical selector, but a supplied order resolves that obstruction; this proves a symmetry-breaking requirement, not universal `SELECT` minimality. `RECIP` and `GATE` remain distinct out-of-polynomial boundary witnesses. Infinite/transfinite processes, arbitrary colimits, Choice-sensitive constructions, and analytic completion remain outside these finite closure theorems. Novelty over established circuit/category/selection literature is not claimed without comparison. No result here proves the Riemann Hypothesis, the Collatz conjecture, or universal completeness of BMF/BMCF.
+
+
+## Spectral von Mangoldt phase-bank extension
+
+| ID | Statement | Status | Notes |
+|---|---|---|---|
+| INF-S001 | Landau's fixed-\(x\) zero formula reconstructs the von Mangoldt weight \(\Lambda(x)\). | STANDARD_THEOREM | Classical input. |
+| INF-X010 | Combining Landau with the finite divisor identity reconstructs \(\log n\) from the zero-spectrum channels of its divisors. | EXACT_FROM_STANDARD | Finite divisor set. |
+| INF-X011 | The dyadic tower \(2^j\) has renormalized spectral limit \(\log2\) at every fixed level \(j\). | STANDARD_COROLLARY | \(\Lambda(2^j)=\log2\). |
+| INF-X012 | In a reverse Collatz fibre, \(a\to a+2\) adds exactly the two dyadic channels \(2^{a+1}\) and \(2^{a+2}\), totaling \(2\log2\). | EXACT | Local reverse-fibre statement only. |
+| INF-N001 | First-256-zero phase-bank calculations reproduce the leading dyadic Landau response and give a GUE-closer-than-Poisson pair-correlation sanity check. | NUMERICAL_WITNESS | Diagnostic, not a proof of Montgomery-Dyson or RH. |
+| INF-O003 | Any claimed cross-sector phase coherence beyond the Landau/von-Mangoldt contribution requires an independent null and preregistered statistic. | OPEN | Prevents re-labelling the built-in explicit-formula signal as a new effect. |
