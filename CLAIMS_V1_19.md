@@ -34,3 +34,6 @@ g_{2,N}
 \]
 
 No random-matrix or zeta-zero sample appears upstream of the derived law.
+
+| INF-273 | For a rank-\(N\) projector \(P_N\), the filled fermion sector \(\Lambda^N\operatorname{Ran}P_N\) is one-dimensional; its normalized Slater state is unique up to global phase and independent of orthonormal basis up to \(\det U\). | EXACT | Top exterior-power dimension and determinant covariance. |
+| INF-274 | Once \(P_N\), CAR statistics and filled \(N\)-particle occupancy are fixed, the two-point determinant contains no further tunable state/basis parameter. | EXACT IN DECLARED SECTOR | INF-273 + CAR/Wick determinant. |
