@@ -253,3 +253,9 @@ The LaTeX paper is `papers/euler_hilbert_hotel_supersymmetry.tex`. Scoped claims
 ## Status
 
 **v1.0.0 — finite research-programme freeze.** The first programme is closed as an auditable collection of scoped theorems, counterexamples, finite classifications, typed boundaries, and explicit open questions. `v1.0 COMPLETE` refers to that repository scope only; it does not mean that all mathematical infinities or the open problems named above are solved.
+
+## Post-freeze additive research: Skewes–Euler–Hilbert–Collatz bridge
+
+The module [research/SKEWES_EULER_HILBERT_COLLATZ_BRIDGE_V0_1.md](research/SKEWES_EULER_HILBERT_COLLATZ_BRIDGE_V0_1.md) adds an exact operator bridge between prime infinitude, Hilbert-Hotel self-embedding, Littlewood–Skewes sign reversal, zeta log-phases, and accelerated odd-Collatz reverse fibres. The local algebraic checks are in `validation/validate_skewes_euler_hilbert_collatz_bridge_v0_1.py`.
+
+Its strongest exact statement is a shared dyadic affine/log-phase carrier with phase increments (gammalog2) and (2gammalog2). No open-problem proof is claimed.
