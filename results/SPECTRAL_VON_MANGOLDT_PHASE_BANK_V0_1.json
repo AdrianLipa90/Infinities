@@ -1,0 +1,62 @@
+{
+  "schema": "SPECTRAL_VON_MANGOLDT_PHASE_BANK_V0_1_RECEIPT",
+  "date": "2026-09-26",
+  "branch": "feat/skewes-euler-hilbert-collatz-v0.1",
+  "status": "PASS_LOCAL_NUMERICAL_WITNESS",
+  "input": {
+    "zero_count": 256,
+    "T_last": 478.9421815346348,
+    "generator": "mpmath 1.3.0",
+    "working_dps": 30
+  },
+  "crosscheck": "first published zero values matched standard tables to displayed precision",
+  "dyadic": {
+    "m1": {
+      "observed_abs": 0.14427897396297587,
+      "landau_main_abs": 0.14593979019843056,
+      "ratio": 0.9886198532066099
+    },
+    "m2": {
+      "observed_abs": 0.10004494443986958,
+      "landau_main_abs": 0.1031950152942523,
+      "ratio": 0.9694745831918281
+    },
+    "m3": {
+      "observed_abs": 0.07208890158942326,
+      "landau_main_abs": 0.07296989509921528,
+      "ratio": 0.9879266167425051
+    }
+  },
+  "base_scan_q_2_20": {
+    "prime_power_count": 12,
+    "non_prime_power_count": 7,
+    "min_prime_power_abs": 0.03941445571706448,
+    "max_non_prime_power_abs": 0.01674391809911454,
+    "finite_sample_perfect_separation": true
+  },
+  "montgomery_dyson_sanity_check": {
+    "rmse_gue": 0.12559796636600087,
+    "rmse_poisson": 0.37919027513498343,
+    "pair_count": 636,
+    "status": "DIAGNOSTIC_ONLY"
+  },
+  "collatz_period3_control": {
+    "epsilon_rad": 0.05,
+    "hits": 8,
+    "expected_uniform_hits": 8.148733086305041,
+    "one_sided_binomial_reference_p": 0.5701491303085872,
+    "status": "NO_EXCESS_RESONANCE"
+  },
+  "prime_shell_exploration": {
+    "status": "EXPLORATORY_NONINDEPENDENT_NOT_PROMOTED",
+    "note": "global-shift reference is not an independent null because the dyadic zero phases already carry the Landau response"
+  },
+  "github_actions": "NOT_RUN",
+  "not_claimed": [
+    "RH proof",
+    "Collatz proof",
+    "new zero-spacing theorem",
+    "independent dyadic-shell resonance",
+    "first Skewes crossing formula"
+  ]
+}
