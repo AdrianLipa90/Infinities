@@ -285,3 +285,20 @@ g_2(\Delta\Phi)
 GUE, random matrices, Montgomery pair correlation and zeta-zero data are excluded from the derivation inputs. Their matching functional form is an external comparison made only after the internal theorem is obtained. Accordingly the law is typed **DERIVED_IN_FRAMEWORK / FORCED_PREDICTION** for this declared Hardy–CAR sector. The separate statement that the zeta-zero process instantiates this exact projector sector remains an explicit binding gate.
 
 See \`research/TIR_HARDY_CAR_SINE_KERNEL_FORCED_PREDICTION_V0_1.md\`, \`CLAIMS_V1_19.md\`, and the executable validator \`validate_hardy_car_sine_kernel_v0_1.py\`.
+
+
+### Forced dual spectral law
+
+The same no-target-leakage projector/CAR derivation also fixes the conjugate spectral form factor. The finite cluster kernel has triangular Fourier coefficients, giving exactly
+
+\[
+S_N(k/N)=\min(|k|/N,1),
+\]
+
+and therefore
+
+\[
+\boxed{S(\tau)=\min(|\tau|,1)}
+\]
+
+in the continuum microscopic limit. Thus the sine-kernel phase repulsion and the ramp/plateau are dual forced predictions of one consecutive-mode projector, not two separately fitted signatures. See \`research/TIR_HARDY_CAR_SPECTRAL_FORM_FACTOR_V0_1.md\`.
