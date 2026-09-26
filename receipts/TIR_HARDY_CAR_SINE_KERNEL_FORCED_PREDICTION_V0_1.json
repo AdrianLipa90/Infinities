@@ -1,0 +1,35 @@
+{
+  "schema": "TIR_HARDY_CAR_SINE_KERNEL_FORCED_PREDICTION_V0_1",
+  "date": "2026-09-26",
+  "repository": "AdrianLipa90/Infinities",
+  "branch": "formalize/hardy-car-sine-kernel-forced-prediction-v0.1-20260926",
+  "base_sha": "339d6c58f3e7d86c67a4f758cd7416692f8f8280",
+  "status": "DERIVED_IN_DECLARED_HARDY_CAR_SECTOR__FORCED_PREDICTION",
+  "inputs": [
+    "Hardy H^2 monomial orbit of unilateral Hilbert-Hotel shift",
+    "orthogonal projector onto first N consecutive orbit modes",
+    "standard CAR/Fock second quantization",
+    "filled N-mode Slater state",
+    "unit-density microscopic unfolding"
+  ],
+  "excluded_inputs": [
+    "GUE",
+    "random matrices",
+    "Montgomery target",
+    "zeta zero list",
+    "prime list"
+  ],
+  "exact_finite_law": "g2_N(s)=1-[sin(pi*s)/(N*sin(pi*s/N))]^2",
+  "derived_limit": "g2(s)=1-[sin(pi*s)/(pi*s)]^2",
+  "phase_form": "g2(DeltaPhi)=1-[sin(DeltaPhi/2)/(DeltaPhi/2)]^2",
+  "local_validator": {
+    "status": "PASS",
+    "max_abs_error_N1024_on_s_minus3_to3": 3.1789517906943843e-7,
+    "small_gap_coefficient": "pi^2/3"
+  },
+  "external_binding": {
+    "gue_montgomery_identification": "POST_DERIVATION_COMPARISON",
+    "zeta_process_binding": "OPEN"
+  },
+  "canon_allowed": false
+}
