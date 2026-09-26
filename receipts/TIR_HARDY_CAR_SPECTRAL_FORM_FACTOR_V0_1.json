@@ -1,0 +1,28 @@
+{
+  "schema": "TIR_HARDY_CAR_SPECTRAL_FORM_FACTOR_V0_1",
+  "date": "2026-09-26",
+  "repository": "AdrianLipa90/Infinities",
+  "branch": "formalize/hardy-car-sine-kernel-forced-prediction-v0.1-20260926",
+  "status": "DERIVED_IN_FRAMEWORK__FORCED_PREDICTION",
+  "parent": "TIR_HARDY_CAR_SINE_KERNEL_FORCED_PREDICTION_V0_1",
+  "inputs": [
+    "consecutive Hardy projector modes",
+    "finite geometric-series kernel",
+    "CAR/Slater pair determinant",
+    "finite Fourier expansion"
+  ],
+  "excluded_inputs": [
+    "GUE",
+    "GUE form-factor target",
+    "zeta zeros",
+    "Montgomery pair correlation",
+    "Odlyzko data"
+  ],
+  "exact_cluster_fourier_coefficient": "(N-|k|)/N for |k|<N; 0 otherwise",
+  "exact_finite_form_factor": "S_N(k/N)=min(|k|/N,1)",
+  "continuum_form_factor": "S(tau)=min(|tau|,1)",
+  "local_validator": {
+    "status": "PASS"
+  },
+  "canon_allowed": false
+}
