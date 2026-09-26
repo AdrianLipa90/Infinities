@@ -1,0 +1,27 @@
+{
+  "schema": "SKEWES_EULER_HILBERT_COLLATZ_BRIDGE_V0_1_VALIDATION",
+  "date": "2026-09-26",
+  "branch": "feat/skewes-euler-hilbert-collatz-v0.1",
+  "status": "PASS_LOCAL",
+  "checks": {
+    "affine_conjugacy": "PASS",
+    "dyadic_log_step": "PASS",
+    "collatz_reverse_fibres": "PASS",
+    "collatz_reverse_log_step": "PASS",
+    "dyadic_phase_factorisation": "PASS",
+    "weyl_phase_relation": "PASS"
+  },
+  "standard_external_inputs": {
+    "littlewood_infinite_sign_changes": "STANDARD_THEOREM_NOT_REPROVED",
+    "zeta_explicit_formula_context": "STANDARD_THEOREM_NOT_REPROVED"
+  },
+  "not_claimed": [
+    "Riemann Hypothesis proof",
+    "Collatz conjecture proof",
+    "first Skewes crossing determination",
+    "new zeta zero-spacing law",
+    "causal equivalence between Collatz and prime-distribution oscillations"
+  ],
+  "github_actions": "NOT_RUN",
+  "provenance_note": "Algebraic validator source was executed in the current model runtime after branch creation; all asserted finite checks passed."
+}
