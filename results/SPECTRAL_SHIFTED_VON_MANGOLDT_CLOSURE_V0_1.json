@@ -1,0 +1,55 @@
+{
+  "schema": "SPECTRAL_SHIFTED_VON_MANGOLDT_CLOSURE_V0_1_RECEIPT",
+  "date": "2026-09-26",
+  "status": "PASS_DERIVATION_AUDIT",
+  "dependencies": [
+    {
+      "statement": "log n = sum_{d|n} Lambda(d)",
+      "status": "STANDARD"
+    },
+    {
+      "statement": "Landau fixed-x formula for sum x^rho",
+      "status": "STANDARD"
+    }
+  ],
+  "derived": [
+    {
+      "id": "SVMC-003",
+      "status": "PASS_FROM_STANDARD",
+      "statement": "finite-divisor spectral reconstruction of log n"
+    },
+    {
+      "id": "SVMC-004",
+      "status": "PASS_FROM_STANDARD",
+      "statement": "spectral reconstruction of log(p+1) shifted prime-power tower"
+    },
+    {
+      "id": "SVMC-005",
+      "status": "PASS_FROM_STANDARD",
+      "statement": "dyadic reconstruction of k log 2"
+    },
+    {
+      "id": "SVMC-007",
+      "status": "PASS_EXACT",
+      "statement": "reverse-Collatz a->a+2 adds two dyadic von Mangoldt channels"
+    }
+  ],
+  "finite_zero_witness": {
+    "n": 256,
+    "T": 478.9421815346348,
+    "renormalized_dyadic_real_j1_j3": [
+      0.6847798887577817,
+      0.6718995859510695,
+      0.6847329999489962
+    ],
+    "target_log2": 0.6931471805599453
+  },
+  "boundary": {
+    "rh_proof": false,
+    "collatz_proof": false,
+    "littlewood_reproof": false,
+    "skewes_first_crossing": false,
+    "novelty_of_landau_formula": false
+  },
+  "github_actions": "NOT_RUN"
+}
