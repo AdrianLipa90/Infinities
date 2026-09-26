@@ -31,5 +31,14 @@
     "gue_montgomery_identification": "POST_DERIVATION_COMPARISON",
     "zeta_process_binding": "OPEN"
   },
-  "canon_allowed": false
+  "canon_allowed": false,
+  "filled_sector_uniqueness": {
+    "status": "EXACT",
+    "statement": "dim Lambda^N(Ran P_N)=1; normalized filled Slater state unique up to global phase",
+    "removes_fitting_freedoms": [
+      "orthonormal basis within Ran P_N",
+      "Slater-vector global phase"
+    ],
+    "remaining_binding": "whether target spectral process selects filled occupancy of P_N"
+  }
 }
