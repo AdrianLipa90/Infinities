@@ -253,3 +253,35 @@ The LaTeX paper is `papers/euler_hilbert_hotel_supersymmetry.tex`. Scoped claims
 ## Status
 
 **v1.0.0 — finite research-programme freeze.** The first programme is closed as an auditable collection of scoped theorems, counterexamples, finite classifications, typed boundaries, and explicit open questions. `v1.0 COMPLETE` refers to that repository scope only; it does not mean that all mathematical infinities or the open problems named above are solved.
+
+
+## Post-freeze additive research: Hardy–CAR sine-kernel forced prediction
+
+The declared Hardy/Toeplitz Hilbert-Hotel shift and the declared CAR/Fock carrier now admit a no-target-leakage derivation of the two-point law. Projecting onto the first \(N\) consecutive Hardy-shift modes and filling that subspace as a fermionic Slater state gives exactly
+
+\[
+g_{2,N}(s)=1-\left[\frac{\sin(\pi s)}{N\sin(\pi s/N)}\right]^2,
+\]
+
+and after unit-density microscopic unfolding,
+
+\[
+\boxed{
+g_2(s)=1-\left(\frac{\sin\pi s}{\pi s}\right)^2.
+}
+\]
+
+In phase coordinates \(\Delta\Phi=2\pi s\),
+
+\[
+g_2(\Delta\Phi)
+=
+1-
+\left[
+\frac{\sin(\Delta\Phi/2)}{\Delta\Phi/2}
+\right]^2.
+\]
+
+GUE, random matrices, Montgomery pair correlation and zeta-zero data are excluded from the derivation inputs. Their matching functional form is an external comparison made only after the internal theorem is obtained. Accordingly the law is typed **DERIVED_IN_FRAMEWORK / FORCED_PREDICTION** for this declared Hardy–CAR sector. The separate statement that the zeta-zero process instantiates this exact projector sector remains an explicit binding gate.
+
+See \`research/TIR_HARDY_CAR_SINE_KERNEL_FORCED_PREDICTION_V0_1.md\`, \`CLAIMS_V1_19.md\`, and the executable validator \`validate_hardy_car_sine_kernel_v0_1.py\`.
