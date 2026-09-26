@@ -406,3 +406,34 @@ g_2(\Delta\Phi)
 \]
 
 The conclusion is exact in the declared Hardy–CAR sector. External identification with GUE/Montgomery is a comparison, not an input. Q.E.D.
+
+
+## 12. Filled-sector uniqueness lemma
+
+The word "filled" does not introduce a continuously tunable state after the projector sector and fermion number have been fixed.
+
+Let \(V_N=\operatorname{Ran}P_N\) with \(\dim V_N=N\). Then
+
+\[
+\dim \Lambda^N V_N = 1.
+\]
+
+Hence every normalized \(N\)-fermion vector occupying exactly \(V_N\) differs from
+
+\[
+\Omega_N=e_0\wedge\cdots\wedge e_{N-1}
+\]
+
+only by a global phase. If \(f_j=\sum_k U_{kj}e_k\) is any other orthonormal basis of \(V_N\), then
+
+\[
+f_0\wedge\cdots\wedge f_{N-1}
+=
+\det(U)\,
+e_0\wedge\cdots\wedge e_{N-1},
+\qquad |\det U|=1.
+\]
+
+Therefore all gauge-invariant correlation functions of the filled sector are basis independent and are fixed by \(P_N\).
+
+This removes basis choice or Slater-vector phase as a fitting freedom. The remaining type-level assumption is the declaration that the physical/spectral process occupies the **filled \(N\)-fermion sector** associated with \(P_N\). For the abstract Hardy--CAR theorem that declaration is part of the sector definition. For zeta zeros it remains the separate SOH-MD001B occupancy binding.
