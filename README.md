@@ -259,3 +259,14 @@ The LaTeX paper is `papers/euler_hilbert_hotel_supersymmetry.tex`. Scoped claims
 The module [research/SKEWES_EULER_HILBERT_COLLATZ_BRIDGE_V0_1.md](research/SKEWES_EULER_HILBERT_COLLATZ_BRIDGE_V0_1.md) adds an exact operator bridge between prime infinitude, Hilbert-Hotel self-embedding, Littlewood–Skewes sign reversal, zeta log-phases, and accelerated odd-Collatz reverse fibres. The local algebraic checks are in `validation/validate_skewes_euler_hilbert_collatz_bridge_v0_1.py`.
 
 Its strongest exact statement is a shared dyadic affine/log-phase carrier with phase increments (gammalog2) and (2gammalog2). No open-problem proof is claimed.
+
+
+## Post-freeze additive research: spectral von Mangoldt phase bank
+
+The common infinity/operator programme now includes:
+
+- [research/SPECTRAL_VON_MANGOLDT_PHASE_BANK_V0_1.md](research/SPECTRAL_VON_MANGOLDT_PHASE_BANK_V0_1.md)
+- [research/SPECTRAL_SHIFTED_VON_MANGOLDT_CLOSURE_V0_1.md](research/SPECTRAL_SHIFTED_VON_MANGOLDT_CLOSURE_V0_1.md)
+- [computations/phase_bank_von_mangoldt_v0_1.py](computations/phase_bank_von_mangoldt_v0_1.py)
+
+This extension makes the shared dyadic clock precise through Landau's zero-spectral reconstruction of von Mangoldt prime-power weights. It remains additive to the frozen v1.0 programme and does not promote any open problem to solved status.
